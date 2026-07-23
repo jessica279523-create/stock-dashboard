@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今日台股研究簡報</title>
+<style>
+  :root {
+    --bg: #f5f0e8;
+    --card: #ffffff;
+    --ink: #2b2620;
+    --sub: #8a8073;
+    --accent: #c1622f;
+    --up: #1f9254;
+    --down: #d0392b;
+    --flat: #8a8073;
+    --border: #e8e0d3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, "PingFang TC", "Noto Sans TC", sans-serif;
+    padding: 24px 16px 60px;
+  }
+  .wrap { max-width: 900px; margin: 0 auto; }
+  .eyebrow {
+    color: var(--accent);
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  h1 { font-size: 30px; margin: 6px 0 4px; }
+  .subtitle { color: var(--sub); font-style: italic; margin-bottom: 14px; }
+  .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+  .pill {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 5px 12px;
+    font-size: 12px;
+    color: var(--sub);
+  }
+  .notice {
+    background: #fbf3ea;
+    border-left: 3px solid var(--accent);
+    padding: 12px 14px;
+    font-size: 12.5px;
+    color: #6b5f4f;
+    border-radius: 6px;
+    margin-bottom: 26px;
+  }
+  .section-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 17px;
+    font-weight: 700;
+    margin: 30px 0 12px;
+  }
+  .section-title .num {
+    background: var(--ink);
+    color: #fff;
+    font-size: 11px;
+    padding: 2px 7px;
+    border-radius: 4px;
+  }
+  .summary-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px;
+  }
+  @media (min-width: 640px) {
+    .summary-grid { grid-template-columns: repeat(5, 1fr); }
+  }
+  .summary-item .label { font-size: 11.5px; color: var(--sub); margin-bottom: 4px; }
+  .summary-item .value { font-size: 22px; font-weight: 700; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--card);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    font-size: 13.5px;
+  }
+  thead { background: #f1ebe0; }
+  th, td { padding: 10px 8px; text-align: right; white-space: nowrap; }
+  th:first-child, td:first-child { text-align: left; }
+  th { font-size: 11.5px; color: var(--sub); font-weight: 600; }
+  tr + tr { border-top: 1px solid var(--border); }
+  .code { font-weight: 700; }
+  .code .name { display: block; font-weight: 400; color: var(--sub); font-size: 11.5px; }
+  .up { color: var(--up); }
+  .down { color: var(--down); }
+  .flat { color: var(--flat); }
+  .watch-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  @media (min-width: 640px) {
+    .watch-grid { grid-template-columns: repeat(4, 1fr); }
+  }
+  .watch-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--flat);
+    border-radius: 10px;
+    padding: 12px 14px;
+  }
+  .watch-card.up { border-left-color: var(--up); }
+  .watch-card.down { border-left-color: var(--down); }
+  .watch-card.index { background: #f1ebe0; }
+  .watch-name { font-size: 12.5px; font-weight: 700; margin-bottom: 6px; }
+  .watch-name span { font-weight: 400; color: var(--sub); font-size: 11px; }
+  .watch-price { font-size: 20px; font-weight: 700; margin-bottom: 4px; }
+  .watch-change { font-size: 12px; }
+  footer { text-align: center; color: var(--sub); font-size: 11.5px; margin-top: 40px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">Daily TW Equity Briefing · 台股每日簡報</div>
+  <h1>今日台股研究簡報</h1>
+  <div class="subtitle">A daily reading of your Taiwan market watchlist</div>
+  <div class="meta">
+    <span class="pill">數據日期 2026-07-22</span>
+    <span class="pill">產生時間 2026-07-22 14:10:00 (台北時間)</span>
+    <span class="pill">監控標的 27</span>
+  </div>
+  <div class="notice">
+    本頁面僅供個人追蹤與學習使用,數據來自 Yahoo Finance(可能有延遲),不構成投資建議。
+  </div>
+
+  <div class="section-title"><span class="num">01</span> 我的持股</div>
+  <div class="summary-grid">
+    <div class="summary-item"><div class="label">總市值</div><div class="value">$185,600</div></div>
+    <div class="summary-item"><div class="label">未實現損益</div><div class="value up">+6,250</div></div>
+    <div class="summary-item"><div class="label">損益幅度</div><div class="value up">+3.49%</div></div>
+    <div class="summary-item"><div class="label">持倉數</div><div class="value">2</div></div>
+    <div class="summary-item"><div class="label">監控近況上漲占比</div><div class="value">25.9%</div></div>
+  </div>
+
+  <table style="margin-top:12px;">
+    <thead>
+      <tr>
+        <th>代碼</th><th>股數</th><th>現價</th><th>當日</th><th>市值</th><th>成本價</th><th>損益</th><th>損益%</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td class="code">3231<span class="name">緯創</span></td>
+          <td>400</td>
+          <td>164.00</td>
+          <td class="down">-8.12%</td>
+          <td>65,600</td>
+          <td>146.50</td>
+          <td class="up">+7,000</td>
+          <td class="up">+11.95%</td>
+        </tr>
+        <tr>
+          <td class="code">2330<span class="name">台積電</span></td>
+          <td>50</td>
+          <td>2,400.00</td>
+          <td class="up">+0.41%</td>
+          <td>120,000</td>
+          <td>2,415.00</td>
+          <td class="down">-750</td>
+          <td class="down">-0.62%</td>
+        </tr>
+    </tbody>
+  </table>
+
+  <div class="section-title"><span class="num">02</span> 大盤指數</div>
+  <div class="watch-grid">
+        <div class="watch-card index down">
+          <div class="watch-name">加權指數</div>
+          <div class="watch-price down">44,825.78</div>
+          <div class="watch-change down">-592.91 &nbsp; -1.34%</div>
+        </div>
+        <div class="watch-card index down">
+          <div class="watch-name">櫃檯指數(OTC)</div>
+          <div class="watch-price down">395.18</div>
+          <div class="watch-change down">-13.22 &nbsp; -3.46%</div>
+        </div>
+  </div>
+
+  <div class="section-title"><span class="num">03</span> 自選監控清單</div>
+  <div class="watch-grid">
+        <div class="watch-card down">
+          <div class="watch-name">長榮 <span>2603</span></div>
+          <div class="watch-price down">206.00</div>
+          <div class="watch-change down">-3.00 &nbsp; -1.48%</div>
+        </div>
+        <div class="watch-card down">
+          <div class="watch-name">陽明 <span>2609</span></div>
+          <div class="watch-price down">51.40</div>
+          <div class="watch-change down">-0.50 &nbsp; -0.98%</div>
+        </div>
+        <div class="watch-card up">
+          <div class="watch-name">萬海 <span>2615</span></div>
+          <div class="watch-price up">85.10</div>
+          <div class="watch-change up">+0.10 &nbsp; +0.12%</div>
+        </div>
+        <div class="watch-card up">
+          <div class="watch-name">台泥 <span>1101</span></div>
+          <div class="watch-price up">23.85</div>
+          <div class="watch-change up">+0.20 &nbsp; +0.83%</div>
+        </div>
+        <div class="watch-card up">
+          <div class="watch-name">第一金 <span>2892</span></div>
+          <div class="watch-price up">34.40</div>
+          <div class="watch-change up">+0.05 &nbsp; +0.15%</div>
+        </div>
+        <div class="watch-card up">
+          <div class="watch-name">長榮航 <span>2618</span></div>
+          <div class="watch-price up">42.10</div>
+          <div class="watch-change up">+0.20 &nbsp; +0.47%</div>
+        </div>
+        <div class="watch-card up">
+          <div class="watch-name">華航 <span>2610</span></div>
+          <div class="watch-price up">21.35</div>
+          <div class="watch-change up">+0.10 &nbsp; +0.47%</div>
+        </div>
+        <div class="watch-card down">
+          <div class="watch-name">台橡 <span>2103</span></div>
+          <div class="watch-price down">24.15</div>
+          <div class="watch-change down">-0.50 &nbsp; -2.11%</div>
+        </div>
+        <div class="watch-card down">
+          <div class="watch-name">彩晶 <span>6116</span></div>
+          <div class="watch-price down">14.65</div>
+          <div class="watch-change down">-0.15 &nbsp; -1.03%</div>
+        </div>
+        <div class="watch-card down">
+          <div class="watch-name">仁寶 <span>2324</span></div>
+          <div class="watch-price down">36.20</div>
+          <div class="watch-change down">-0.20 &nbsp; -0.56%</div>
+        </div>
+        <div class="watch-card down">
+          <div class="watch-name">英業達 <span>2356</span></div>
+          <div class="watch-price down">61.70</div>
+          <div class="watch-change down">-1.60 &nbsp; -2.66%</div>
+        </div>
+        <div class="watch-card down">
+          <div class="watch-name">友達 <span>2409</span></div>
+          <div class="watch-price down">25.80</div>
+          <div class="watch-change down">-0.20 &nbsp; -0.78%</div>
+        </div>
+        <div class="watch-card down">
+          <div class="watch-name">力積電 <span>6770</span></div>
+          <div class="watch-price down">67.90</div>
+          <div class="watch-change down">-2.80 &nbsp; -4.30%</div>
+        </div>
+        <div class="watch-card down">
+          <div class="watch-name">光寶科 <span>2301</span></div>
+          <div class="watch-price down">218.00</div>
+          <div class="watch-change down">-11.00 &nbsp; -5.31%</div>
+        </div>
+        <div class="watch-card up">
+          <div class="watch-name">中纖 <span>1718</span></div>
+          <div class="watch-price up">12.35</div>
+          <div class="watch-change up">+0.85 &nbsp; +6.44%</div>
+        </div>
+        <div class="watch-card down">
+          <div class="watch-name">國巨 <span>2327</span></div>
+          <div class="watch-price down">703.00</div>
+          <div class="watch-change down">-33.00 &nbsp; -4.93%</div>
+        </div>
+        <div class="watch-card down">
+          <div class="watch-name">華邦電 <span>2344</span></div>
+          <div class="watch-price down">171.00</div>
+          <div class="watch-change down">-15.50 &nbsp; -9.97%</div>
+        </div>
+        <div class="watch-card up">
+          <div class="watch-name">兆豐金 <span>2886</span></div>
+          <div class="watch-price up">48.20</div>
+          <div class="watch-change up">+0.40 &nbsp; +0.82%</div>
+        </div>
+        <div class="watch-card down">
+          <div class="watch-name">國泰金 <span>2882</span></div>
+          <div class="watch-price down">96.80</div>
+          <div class="watch-change down">-1.00 &nbsp; -1.04%</div>
+        </div>
+        <div class="watch-card down">
+          <div class="watch-name">彰銀 <span>2801</span></div>
+          <div class="watch-price down">24.65</div>
+          <div class="watch-change down">-0.35 &nbsp; -1.44%</div>
+        </div>
+        <div class="watch-card down">
+          <div class="watch-name">聯電 <span>2303</span></div>
+          <div class="watch-price down">139.00</div>
+          <div class="watch-change down">-4.50 &nbsp; -3.35%</div>
+        </div>
+        <div class="watch-card down">
+          <div class="watch-name">廣宇 <span>2328</span></div>
+          <div class="watch-price down">47.00</div>
+          <div class="watch-change down">-0.40 &nbsp; -0.86%</div>
+        </div>
+        <div class="watch-card down">
+          <div class="watch-name">鴻海 <span>2317</span></div>
+          <div class="watch-price down">251.50</div>
+          <div class="watch-change down">-5.50 &nbsp; -2.24%</div>
+        </div>
+        <div class="watch-card down">
+          <div class="watch-name">群創 <span>3481</span></div>
+          <div class="watch-price down">52.50</div>
+          <div class="watch-change down">-1.80 &nbsp; -3.55%</div>
+        </div>
+        <div class="watch-card up">
+          <div class="watch-name">統一FANG+ <span>00757</span></div>
+          <div class="watch-price up">132.45</div>
+          <div class="watch-change up">+0.05 &nbsp; +0.04%</div>
+        </div>
+        <div class="watch-card up">
+          <div class="watch-name">統一 <span>1216</span></div>
+          <div class="watch-price up">76.80</div>
+          <div class="watch-change up">+2.80 &nbsp; +3.52%</div>
+        </div>
+        <div class="watch-card down">
+          <div class="watch-name">中信金 <span>2891</span></div>
+          <div class="watch-price down">64.00</div>
+          <div class="watch-change down">-1.30 &nbsp; -2.07%</div>
+        </div>
+  </div>
+
+  <footer>由 GitHub Actions 每日自動更新 · Powered by yfinance</footer>
+</div>
+</body>
+</html>
