@@ -20,6 +20,7 @@ import yfinance as yf
 HOLDINGS = [
     {"code": "3231", "name": "緯創",   "shares": 400, "cost": 146.5},
     {"code": "2330", "name": "台積電", "shares": 50,  "cost": 2415.0},
+    {"code": "6770", "name": "力積電", "shares": 500,  "cost": 61.6},
 ]
 
 # 純監控清單(只顯示現價與漲跌,不計損益)
