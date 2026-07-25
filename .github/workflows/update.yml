@@ -1,0 +1,39 @@
+name: Update Stock Dashboard
+
+on:
+  schedule:
+    # 台北時間每個交易日下午 2:10 執行(對應 UTC 06:10)
+    - cron: "10 6 * * 1-5"
+  workflow_dispatch: {}   # 允許手動點擊執行,方便測試
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch data
+        run: python fetch_and_render.py
+
+      - name: Render HTML
+        run: python render.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data.json docs/index.html
+          git diff --quiet && git diff --staged --quiet || git commit -m "自動更新: $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push
