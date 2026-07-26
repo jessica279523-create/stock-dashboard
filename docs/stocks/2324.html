@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>仁寶 2324 · 個股詳情</title>
+<style>
+  :root {
+    --bg: #f5f0e8; --card: #ffffff; --ink: #2b2620; --sub: #8a8073;
+    --accent: #c1622f; --up: #d0392b; --down: #1f9254; --flat: #8a8073; --border: #e8e0d3;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+    font-family: -apple-system, "PingFang TC", "Noto Sans TC", sans-serif; padding: 24px 16px 60px; }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  a.back { color: var(--accent); font-size: 13px; text-decoration: none; }
+  h1 { font-size: 26px; margin: 10px 0 2px; }
+  .sub { color: var(--sub); font-size: 13px; margin-bottom: 20px; }
+  .section-title { font-size: 15px; font-weight: 700; margin: 26px 0 10px; color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; background: var(--card); border-radius: 12px;
+    overflow: hidden; border: 1px solid var(--border); font-size: 13.5px; }
+  th, td { padding: 9px 8px; text-align: right; }
+  td:first-child, th:first-child { text-align: left; }
+  thead { background: #f1ebe0; }
+  tr + tr { border-top: 1px solid var(--border); }
+  .up { color: var(--up); } .down { color: var(--down); } .flat { color: var(--flat); }
+  .trend-box, .info-box { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 14px; }
+  .trend-svg { width: 100%; height: 140px; display: block; }
+  .spark-labels { display: flex; justify-content: space-between; font-size: 11px; color: var(--sub); margin-top: 4px; }
+  .spark-empty { font-size: 12.5px; color: var(--sub); text-align: center; padding: 20px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="../index.html">← 回儀表板</a>
+  <h1>仁寶 <span style="color:var(--sub); font-weight:400;">2324</span></h1>
+  <div class="sub">Compal Electronics, Inc. · Computer Hardware</div>
+
+  <div class="section-title">簡介</div>
+  <div class="info-box">
+    公司名稱:Compal Electronics, Inc.<br>
+    股票代碼:2324<br>
+    產業分類:Computer Hardware
+  </div>
+
+  <div class="section-title">走勢(近3個月收盤價)</div>
+  <div class="trend-box">
+    <svg viewBox="0 0 680 140" class="trend-svg" preserveAspectRatio="none">
+      <polyline fill="none" stroke="#d0392b" stroke-width="2.5" points="12.0,111.9 22.4,113.7 32.8,114.6 43.2,115.5 53.7,119.7 64.1,118.5 74.5,117.9 84.9,118.5 95.3,117.0 105.7,115.8 116.1,108.9 126.5,114.3 137.0,105.9 147.4,112.2 157.8,121.7 168.2,124.1 178.6,126.8 189.0,128.0 199.4,111.6 209.8,104.7 220.3,86.0 230.7,92.2 241.1,93.4 251.5,92.8 261.9,73.7 272.3,52.0 282.7,28.1 293.1,12.0 303.6,40.0 314.0,45.7 324.4,62.4 334.8,63.3 345.2,71.3 355.6,77.0 366.0,75.8 376.4,66.9 386.9,69.6 397.3,70.1 407.7,67.5 418.1,69.0 428.5,74.6 438.9,66.6 449.3,72.8 459.7,85.1 470.2,88.6 480.6,82.1 491.0,86.3 501.4,85.1 511.8,84.2 522.2,79.7 532.6,82.1 543.0,80.9 553.5,74.3 563.9,74.3 574.3,74.0 584.7,80.6 595.1,77.0 605.5,78.2 615.9,77.9 626.3,87.4 636.8,77.9 647.2,76.7 657.6,73.4 668.0,70.7" />
+    </svg>
+    <div class="spark-labels"><span>2026-04-24</span><span>2026-07-24</span></div>
+    </div>
+
+  <div class="section-title">價量(近10個交易日)</div>
+  
+    <table>
+      <thead><tr><th>日期</th><th>開盤</th><th>最高</th><th>最低</th><th>收盤</th><th>成交量</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>2026-07-24</td>
+          <td>36.45</td>
+          <td>37.30</td>
+          <td>36.10</td>
+          <td class="up">37.20</td>
+          <td>43,613,338</td>
+        </tr>
+        <tr>
+          <td>2026-07-23</td>
+          <td>36.60</td>
+          <td>37.70</td>
+          <td>36.40</td>
+          <td class="up">36.75</td>
+          <td>57,514,518</td>
+        </tr>
+        <tr>
+          <td>2026-07-22</td>
+          <td>36.45</td>
+          <td>37.00</td>
+          <td>36.05</td>
+          <td class="down">36.20</td>
+          <td>46,587,244</td>
+        </tr>
+        <tr>
+          <td>2026-07-21</td>
+          <td>34.80</td>
+          <td>36.00</td>
+          <td>34.45</td>
+          <td class="up">36.00</td>
+          <td>31,358,614</td>
+        </tr>
+        <tr>
+          <td>2026-07-20</td>
+          <td>36.05</td>
+          <td>36.20</td>
+          <td>33.70</td>
+          <td class="down">34.40</td>
+          <td>58,373,588</td>
+        </tr>
+        <tr>
+          <td>2026-07-17</td>
+          <td>35.60</td>
+          <td>36.95</td>
+          <td>35.20</td>
+          <td class="up">36.00</td>
+          <td>100,200,044</td>
+        </tr>
+        <tr>
+          <td>2026-07-16</td>
+          <td>36.00</td>
+          <td>36.50</td>
+          <td>35.60</td>
+          <td class="down">35.95</td>
+          <td>28,612,742</td>
+        </tr>
+        <tr>
+          <td>2026-07-15</td>
+          <td>35.75</td>
+          <td>36.65</td>
+          <td>35.40</td>
+          <td class="up">36.15</td>
+          <td>33,007,392</td>
+        </tr>
+        <tr>
+          <td>2026-07-14</td>
+          <td>36.80</td>
+          <td>36.85</td>
+          <td>34.70</td>
+          <td class="down">35.55</td>
+          <td>45,477,298</td>
+        </tr>
+        <tr>
+          <td>2026-07-13</td>
+          <td>37.95</td>
+          <td>38.20</td>
+          <td>36.20</td>
+          <td class="down">36.65</td>
+          <td>63,945,963</td>
+        </tr></tbody>
+    </table>
+
+  <div class="section-title">財務</div>
+  
+    <table>
+      <tbody>
+        <tr><td>每股盈餘(EPS)</td><td>1.32</td></tr>
+        <tr><td>營收</td><td>7,597.2 億</td></tr>
+        <tr><td>毛利率</td><td>5.65%</td></tr>
+        <tr><td>淨利率</td><td>0.76%</td></tr>
+        <tr><td>ROE(股東權益報酬率)</td><td>5.22%</td></tr>
+        <tr><td>市值</td><td>1,583.7 億</td></tr>
+        <tr><td>本益比(PE)</td><td>28.2</td></tr>
+        <tr><td>殖利率</td><td>2.96%</td></tr></tbody>
+    </table>
+
+  <div class="section-title">股利(近期發放紀錄)</div>
+  
+    <table>
+      <thead><tr><th>發放日</th><th>每股金額</th></tr></thead>
+      <tbody>
+        <tr><td>2026-03-27</td><td>1.10</td></tr>
+        <tr><td>2025-03-27</td><td>1.40</td></tr>
+        <tr><td>2024-03-29</td><td>1.20</td></tr>
+        <tr><td>2023-04-20</td><td>1.20</td></tr>
+        <tr><td>2022-04-22</td><td>2.00</td></tr>
+        <tr><td>2021-04-23</td><td>1.60</td></tr>
+        <tr><td>2020-07-17</td><td>1.20</td></tr>
+        <tr><td>2019-07-15</td><td>1.20</td></tr></tbody>
+    </table>
+
+</div>
+</body>
+</html>

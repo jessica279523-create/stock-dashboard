@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>中纖 1718 · 個股詳情</title>
+<style>
+  :root {
+    --bg: #f5f0e8; --card: #ffffff; --ink: #2b2620; --sub: #8a8073;
+    --accent: #c1622f; --up: #d0392b; --down: #1f9254; --flat: #8a8073; --border: #e8e0d3;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+    font-family: -apple-system, "PingFang TC", "Noto Sans TC", sans-serif; padding: 24px 16px 60px; }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  a.back { color: var(--accent); font-size: 13px; text-decoration: none; }
+  h1 { font-size: 26px; margin: 10px 0 2px; }
+  .sub { color: var(--sub); font-size: 13px; margin-bottom: 20px; }
+  .section-title { font-size: 15px; font-weight: 700; margin: 26px 0 10px; color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; background: var(--card); border-radius: 12px;
+    overflow: hidden; border: 1px solid var(--border); font-size: 13.5px; }
+  th, td { padding: 9px 8px; text-align: right; }
+  td:first-child, th:first-child { text-align: left; }
+  thead { background: #f1ebe0; }
+  tr + tr { border-top: 1px solid var(--border); }
+  .up { color: var(--up); } .down { color: var(--down); } .flat { color: var(--flat); }
+  .trend-box, .info-box { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 14px; }
+  .trend-svg { width: 100%; height: 140px; display: block; }
+  .spark-labels { display: flex; justify-content: space-between; font-size: 11px; color: var(--sub); margin-top: 4px; }
+  .spark-empty { font-size: 12.5px; color: var(--sub); text-align: center; padding: 20px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="../index.html">← 回儀表板</a>
+  <h1>中纖 <span style="color:var(--sub); font-weight:400;">1718</span></h1>
+  <div class="sub">China Man-Made Fiber Corporation · Banks - Regional</div>
+
+  <div class="section-title">簡介</div>
+  <div class="info-box">
+    公司名稱:China Man-Made Fiber Corporation<br>
+    股票代碼:1718<br>
+    產業分類:Banks - Regional
+  </div>
+
+  <div class="section-title">走勢(近3個月收盤價)</div>
+  <div class="trend-box">
+    <svg viewBox="0 0 680 140" class="trend-svg" preserveAspectRatio="none">
+      <polyline fill="none" stroke="#d0392b" stroke-width="2.5" points="12.0,123.7 22.4,124.3 32.8,122.8 43.2,123.6 53.7,124.9 64.1,125.5 74.5,125.4 84.9,126.6 95.3,127.5 105.7,127.6 116.1,125.8 126.5,122.8 137.0,125.4 147.4,123.2 157.8,127.3 168.2,124.5 178.6,125.4 189.0,126.4 199.4,125.9 209.8,126.0 220.3,126.8 230.7,127.0 241.1,128.0 251.5,126.8 261.9,124.0 272.3,115.3 282.7,105.9 293.1,95.5 303.6,84.0 314.0,81.8 324.4,79.9 334.8,87.6 345.2,94.2 355.6,92.2 366.0,90.3 376.4,89.2 386.9,90.2 397.3,82.6 407.7,81.7 418.1,82.7 428.5,89.6 438.9,89.9 449.3,77.9 459.7,64.8 470.2,50.5 480.6,34.8 491.0,48.5 501.4,32.9 511.8,15.3 522.2,12.0 532.6,15.3 543.0,24.4 553.5,25.0 563.9,25.0 574.3,23.1 584.7,29.0 595.1,15.9 605.5,19.2 615.9,32.2 626.3,40.7 636.8,38.1 647.2,49.2 657.6,62.2 668.0,66.8" />
+    </svg>
+    <div class="spark-labels"><span>2026-04-24</span><span>2026-07-24</span></div>
+    </div>
+
+  <div class="section-title">價量(近10個交易日)</div>
+  
+    <table>
+      <thead><tr><th>日期</th><th>開盤</th><th>最高</th><th>最低</th><th>收盤</th><th>成交量</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>2026-07-24</td>
+          <td>11.65</td>
+          <td>11.65</td>
+          <td>10.90</td>
+          <td class="down">11.00</td>
+          <td>40,873,803</td>
+        </tr>
+        <tr>
+          <td>2026-07-23</td>
+          <td>12.15</td>
+          <td>12.75</td>
+          <td>11.15</td>
+          <td class="down">11.35</td>
+          <td>80,697,185</td>
+        </tr>
+        <tr>
+          <td>2026-07-22</td>
+          <td>13.50</td>
+          <td>13.95</td>
+          <td>12.35</td>
+          <td class="down">12.35</td>
+          <td>102,125,464</td>
+        </tr>
+        <tr>
+          <td>2026-07-21</td>
+          <td>12.80</td>
+          <td>13.20</td>
+          <td>12.80</td>
+          <td class="up">13.20</td>
+          <td>10,060,409</td>
+        </tr>
+        <tr>
+          <td>2026-07-20</td>
+          <td>13.95</td>
+          <td>13.95</td>
+          <td>12.45</td>
+          <td class="down">13.00</td>
+          <td>8,546,100</td>
+        </tr>
+        <tr>
+          <td>2026-07-17</td>
+          <td>14.00</td>
+          <td>14.10</td>
+          <td>13.40</td>
+          <td class="down">13.65</td>
+          <td>10,045,979</td>
+        </tr>
+        <tr>
+          <td>2026-07-16</td>
+          <td>14.60</td>
+          <td>14.95</td>
+          <td>14.60</td>
+          <td class="up">14.65</td>
+          <td>7,010,740</td>
+        </tr>
+        <tr>
+          <td>2026-07-15</td>
+          <td>14.40</td>
+          <td>14.90</td>
+          <td>14.00</td>
+          <td class="up">14.90</td>
+          <td>13,815,302</td>
+        </tr>
+        <tr>
+          <td>2026-07-14</td>
+          <td>14.35</td>
+          <td>14.35</td>
+          <td>13.30</td>
+          <td class="down">13.90</td>
+          <td>15,810,989</td>
+        </tr>
+        <tr>
+          <td>2026-07-13</td>
+          <td>14.90</td>
+          <td>14.90</td>
+          <td>14.20</td>
+          <td class="down">14.35</td>
+          <td>10,196,458</td>
+        </tr></tbody>
+    </table>
+
+  <div class="section-title">財務</div>
+  
+    <table>
+      <tbody>
+        <tr><td>每股盈餘(EPS)</td><td>0.09</td></tr>
+        <tr><td>營收</td><td>439.2 億</td></tr>
+        <tr><td>毛利率</td><td>76.92%</td></tr>
+        <tr><td>淨利率</td><td>0.74%</td></tr>
+        <tr><td>ROE(股東權益報酬率)</td><td>8.14%</td></tr>
+        <tr><td>市值</td><td>146.7 億</td></tr>
+        <tr><td>本益比(PE)</td><td>122.2</td></tr>
+        <tr><td>殖利率</td><td>--</td></tr></tbody>
+    </table>
+
+  <div class="section-title">股利(近期發放紀錄)</div>
+  
+    <table>
+      <thead><tr><th>發放日</th><th>每股金額</th></tr></thead>
+      <tbody>
+        <tr><td>2021-10-27</td><td>0.10</td></tr>
+        <tr><td>2019-08-06</td><td>0.10</td></tr>
+        <tr><td>2018-08-29</td><td>0.09</td></tr>
+        <tr><td>2016-09-22</td><td>0.08</td></tr>
+        <tr><td>2008-10-27</td><td>0.67</td></tr>
+        <tr><td>2005-08-23</td><td>0.28</td></tr></tbody>
+    </table>
+
+</div>
+</body>
+</html>

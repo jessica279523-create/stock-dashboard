@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>聯電 2303 · 個股詳情</title>
+<style>
+  :root {
+    --bg: #f5f0e8; --card: #ffffff; --ink: #2b2620; --sub: #8a8073;
+    --accent: #c1622f; --up: #d0392b; --down: #1f9254; --flat: #8a8073; --border: #e8e0d3;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+    font-family: -apple-system, "PingFang TC", "Noto Sans TC", sans-serif; padding: 24px 16px 60px; }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  a.back { color: var(--accent); font-size: 13px; text-decoration: none; }
+  h1 { font-size: 26px; margin: 10px 0 2px; }
+  .sub { color: var(--sub); font-size: 13px; margin-bottom: 20px; }
+  .section-title { font-size: 15px; font-weight: 700; margin: 26px 0 10px; color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; background: var(--card); border-radius: 12px;
+    overflow: hidden; border: 1px solid var(--border); font-size: 13.5px; }
+  th, td { padding: 9px 8px; text-align: right; }
+  td:first-child, th:first-child { text-align: left; }
+  thead { background: #f1ebe0; }
+  tr + tr { border-top: 1px solid var(--border); }
+  .up { color: var(--up); } .down { color: var(--down); } .flat { color: var(--flat); }
+  .trend-box, .info-box { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 14px; }
+  .trend-svg { width: 100%; height: 140px; display: block; }
+  .spark-labels { display: flex; justify-content: space-between; font-size: 11px; color: var(--sub); margin-top: 4px; }
+  .spark-empty { font-size: 12.5px; color: var(--sub); text-align: center; padding: 20px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="../index.html">← 回儀表板</a>
+  <h1>聯電 <span style="color:var(--sub); font-weight:400;">2303</span></h1>
+  <div class="sub">United Microelectronics Corporation · Semiconductors</div>
+
+  <div class="section-title">簡介</div>
+  <div class="info-box">
+    公司名稱:United Microelectronics Corporation<br>
+    股票代碼:2303<br>
+    產業分類:Semiconductors
+  </div>
+
+  <div class="section-title">走勢(近3個月收盤價)</div>
+  <div class="trend-box">
+    <svg viewBox="0 0 680 140" class="trend-svg" preserveAspectRatio="none">
+      <polyline fill="none" stroke="#d0392b" stroke-width="2.5" points="12.0,126.0 22.4,128.0 32.8,125.4 43.2,126.0 53.7,123.0 64.1,118.7 74.5,116.6 84.9,107.5 95.3,101.9 105.7,107.6 116.1,103.6 126.5,93.1 137.0,99.8 147.4,89.3 157.8,87.1 168.2,86.0 178.6,83.8 189.0,89.3 199.4,80.5 209.8,82.7 220.3,70.7 230.7,64.6 241.1,50.4 251.5,52.0 261.9,49.3 272.3,47.6 282.7,52.6 293.1,64.6 303.6,70.7 314.0,63.5 324.4,75.1 334.8,67.9 345.2,77.8 355.6,70.7 366.0,61.3 376.4,52.6 386.9,53.1 397.3,54.2 407.7,48.2 418.1,32.3 428.5,21.3 438.9,12.6 449.3,12.0 459.7,27.9 470.2,27.9 480.6,27.4 491.0,22.4 501.4,26.3 511.8,20.8 522.2,25.7 532.6,37.8 543.0,25.9 553.5,33.7 563.9,33.7 574.3,36.5 584.7,39.3 595.1,22.6 605.5,29.3 615.9,47.1 626.3,62.7 636.8,57.7 647.2,52.7 657.6,53.3 668.0,65.0" />
+    </svg>
+    <div class="spark-labels"><span>2026-04-24</span><span>2026-07-24</span></div>
+    </div>
+
+  <div class="section-title">價量(近10個交易日)</div>
+  
+    <table>
+      <thead><tr><th>日期</th><th>開盤</th><th>最高</th><th>最低</th><th>收盤</th><th>成交量</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>2026-07-24</td>
+          <td>135.00</td>
+          <td>138.00</td>
+          <td>128.00</td>
+          <td class="down">128.00</td>
+          <td>149,526,433</td>
+        </tr>
+        <tr>
+          <td>2026-07-23</td>
+          <td>141.00</td>
+          <td>142.50</td>
+          <td>135.50</td>
+          <td class="down">138.50</td>
+          <td>114,382,542</td>
+        </tr>
+        <tr>
+          <td>2026-07-22</td>
+          <td>140.50</td>
+          <td>145.00</td>
+          <td>137.50</td>
+          <td class="down">139.00</td>
+          <td>175,239,759</td>
+        </tr>
+        <tr>
+          <td>2026-07-21</td>
+          <td>130.00</td>
+          <td>138.00</td>
+          <td>125.50</td>
+          <td class="up">134.50</td>
+          <td>257,680,244</td>
+        </tr>
+        <tr>
+          <td>2026-07-20</td>
+          <td>141.00</td>
+          <td>141.00</td>
+          <td>130.00</td>
+          <td class="down">130.00</td>
+          <td>293,374,867</td>
+        </tr>
+        <tr>
+          <td>2026-07-17</td>
+          <td>145.50</td>
+          <td>148.00</td>
+          <td>144.00</td>
+          <td class="down">144.00</td>
+          <td>246,895,686</td>
+        </tr>
+        <tr>
+          <td>2026-07-16</td>
+          <td>161.50</td>
+          <td>168.00</td>
+          <td>159.00</td>
+          <td class="down">160.00</td>
+          <td>86,658,780</td>
+        </tr>
+        <tr>
+          <td>2026-07-15</td>
+          <td>158.50</td>
+          <td>166.00</td>
+          <td>156.00</td>
+          <td class="up">166.00</td>
+          <td>109,012,211</td>
+        </tr>
+        <tr>
+          <td>2026-07-14</td>
+          <td>150.50</td>
+          <td>151.00</td>
+          <td>140.00</td>
+          <td class="up">151.00</td>
+          <td>85,375,932</td>
+        </tr>
+        <tr>
+          <td>2026-07-13</td>
+          <td>156.00</td>
+          <td>158.00</td>
+          <td>151.50</td>
+          <td class="down">153.50</td>
+          <td>66,627,286</td>
+        </tr></tbody>
+    </table>
+
+  <div class="section-title">財務</div>
+  
+    <table>
+      <tbody>
+        <tr><td>每股盈餘(EPS)</td><td>3.94</td></tr>
+        <tr><td>營收</td><td>2,407.3 億</td></tr>
+        <tr><td>毛利率</td><td>29.61%</td></tr>
+        <tr><td>淨利率</td><td>20.82%</td></tr>
+        <tr><td>ROE(股東權益報酬率)</td><td>12.52%</td></tr>
+        <tr><td>市值</td><td>16,059.4 億</td></tr>
+        <tr><td>本益比(PE)</td><td>32.5</td></tr>
+        <tr><td>殖利率</td><td>2.04%</td></tr></tbody>
+    </table>
+
+  <div class="section-title">股利(近期發放紀錄)</div>
+  
+    <table>
+      <thead><tr><th>發放日</th><th>每股金額</th></tr></thead>
+      <tbody>
+        <tr><td>2026-07-08</td><td>2.61</td></tr>
+        <tr><td>2025-06-24</td><td>2.85</td></tr>
+        <tr><td>2024-07-02</td><td>3.00</td></tr>
+        <tr><td>2023-06-27</td><td>3.60</td></tr>
+        <tr><td>2022-06-22</td><td>3.00</td></tr>
+        <tr><td>2021-07-22</td><td>1.60</td></tr>
+        <tr><td>2020-07-15</td><td>0.80</td></tr>
+        <tr><td>2019-07-16</td><td>0.59</td></tr></tbody>
+    </table>
+
+</div>
+</body>
+</html>

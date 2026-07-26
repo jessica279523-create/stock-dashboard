@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>統一 1216 · 個股詳情</title>
+<style>
+  :root {
+    --bg: #f5f0e8; --card: #ffffff; --ink: #2b2620; --sub: #8a8073;
+    --accent: #c1622f; --up: #d0392b; --down: #1f9254; --flat: #8a8073; --border: #e8e0d3;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+    font-family: -apple-system, "PingFang TC", "Noto Sans TC", sans-serif; padding: 24px 16px 60px; }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  a.back { color: var(--accent); font-size: 13px; text-decoration: none; }
+  h1 { font-size: 26px; margin: 10px 0 2px; }
+  .sub { color: var(--sub); font-size: 13px; margin-bottom: 20px; }
+  .section-title { font-size: 15px; font-weight: 700; margin: 26px 0 10px; color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; background: var(--card); border-radius: 12px;
+    overflow: hidden; border: 1px solid var(--border); font-size: 13.5px; }
+  th, td { padding: 9px 8px; text-align: right; }
+  td:first-child, th:first-child { text-align: left; }
+  thead { background: #f1ebe0; }
+  tr + tr { border-top: 1px solid var(--border); }
+  .up { color: var(--up); } .down { color: var(--down); } .flat { color: var(--flat); }
+  .trend-box, .info-box { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 14px; }
+  .trend-svg { width: 100%; height: 140px; display: block; }
+  .spark-labels { display: flex; justify-content: space-between; font-size: 11px; color: var(--sub); margin-top: 4px; }
+  .spark-empty { font-size: 12.5px; color: var(--sub); text-align: center; padding: 20px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="../index.html">← 回儀表板</a>
+  <h1>統一 <span style="color:var(--sub); font-weight:400;">1216</span></h1>
+  <div class="sub">Uni-President Enterprises Corp. · Packaged Foods</div>
+
+  <div class="section-title">簡介</div>
+  <div class="info-box">
+    公司名稱:Uni-President Enterprises Corp.<br>
+    股票代碼:1216<br>
+    產業分類:Packaged Foods
+  </div>
+
+  <div class="section-title">走勢(近3個月收盤價)</div>
+  <div class="trend-box">
+    <svg viewBox="0 0 680 140" class="trend-svg" preserveAspectRatio="none">
+      <polyline fill="none" stroke="#d0392b" stroke-width="2.5" points="12.0,100.0 22.4,110.0 32.8,109.0 43.2,115.0 53.7,122.0 64.1,119.0 74.5,124.0 84.9,128.0 95.3,121.0 105.7,83.0 116.1,76.0 126.5,84.0 137.0,63.0 147.4,67.0 157.8,58.0 168.2,68.0 178.6,67.0 189.0,81.0 199.4,84.0 209.8,100.0 220.3,103.0 230.7,107.0 241.1,113.0 251.5,107.0 261.9,97.0 272.3,78.0 282.7,73.0 293.1,82.0 303.6,79.0 314.0,77.0 324.4,86.0 334.8,74.0 345.2,71.0 355.6,59.0 366.0,50.0 376.4,52.0 386.9,59.0 397.3,55.0 407.7,70.0 418.1,72.0 428.5,64.0 438.9,64.0 449.3,59.0 459.7,69.0 470.2,58.0 480.6,70.0 491.0,70.0 501.4,66.0 511.8,52.0 522.2,37.0 532.6,35.0 543.0,29.0 553.5,31.0 563.9,31.0 574.3,30.0 584.7,30.0 595.1,29.0 605.5,25.0 615.9,15.0 626.3,12.0 636.8,19.0 647.2,47.0 657.6,45.0 668.0,41.0" />
+    </svg>
+    <div class="spark-labels"><span>2026-04-24</span><span>2026-07-24</span></div>
+    </div>
+
+  <div class="section-title">價量(近10個交易日)</div>
+  
+    <table>
+      <thead><tr><th>日期</th><th>開盤</th><th>最高</th><th>最低</th><th>收盤</th><th>成交量</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>2026-07-24</td>
+          <td>75.90</td>
+          <td>77.70</td>
+          <td>75.90</td>
+          <td class="up">77.40</td>
+          <td>15,492,924</td>
+        </tr>
+        <tr>
+          <td>2026-07-23</td>
+          <td>76.70</td>
+          <td>77.00</td>
+          <td>75.50</td>
+          <td class="up">77.00</td>
+          <td>20,456,070</td>
+        </tr>
+        <tr>
+          <td>2026-07-22</td>
+          <td>79.30</td>
+          <td>79.30</td>
+          <td>75.50</td>
+          <td class="down">76.80</td>
+          <td>28,199,870</td>
+        </tr>
+        <tr>
+          <td>2026-07-21</td>
+          <td>79.90</td>
+          <td>80.30</td>
+          <td>79.20</td>
+          <td class="down">79.60</td>
+          <td>22,086,149</td>
+        </tr>
+        <tr>
+          <td>2026-07-20</td>
+          <td>80.10</td>
+          <td>80.70</td>
+          <td>78.90</td>
+          <td class="up">80.30</td>
+          <td>30,308,638</td>
+        </tr>
+        <tr>
+          <td>2026-07-17</td>
+          <td>78.50</td>
+          <td>80.00</td>
+          <td>78.50</td>
+          <td class="up">80.00</td>
+          <td>30,643,962</td>
+        </tr>
+        <tr>
+          <td>2026-07-16</td>
+          <td>78.10</td>
+          <td>79.50</td>
+          <td>77.60</td>
+          <td class="up">79.00</td>
+          <td>23,014,449</td>
+        </tr>
+        <tr>
+          <td>2026-07-15</td>
+          <td>78.50</td>
+          <td>79.40</td>
+          <td>78.00</td>
+          <td class="up">78.60</td>
+          <td>24,103,307</td>
+        </tr>
+        <tr>
+          <td>2026-07-14</td>
+          <td>78.60</td>
+          <td>78.60</td>
+          <td>77.50</td>
+          <td class="down">78.50</td>
+          <td>17,972,580</td>
+        </tr>
+        <tr>
+          <td>2026-07-13</td>
+          <td>78.00</td>
+          <td>79.40</td>
+          <td>78.00</td>
+          <td class="up">78.50</td>
+          <td>20,435,575</td>
+        </tr></tbody>
+    </table>
+
+  <div class="section-title">財務</div>
+  
+    <table>
+      <tbody>
+        <tr><td>每股盈餘(EPS)</td><td>3.44</td></tr>
+        <tr><td>營收</td><td>6,786.2 億</td></tr>
+        <tr><td>毛利率</td><td>33.24%</td></tr>
+        <tr><td>淨利率</td><td>3.10%</td></tr>
+        <tr><td>ROE(股東權益報酬率)</td><td>14.74%</td></tr>
+        <tr><td>市值</td><td>4,397.9 億</td></tr>
+        <tr><td>本益比(PE)</td><td>22.5</td></tr>
+        <tr><td>殖利率</td><td>3.88%</td></tr></tbody>
+    </table>
+
+  <div class="section-title">股利(近期發放紀錄)</div>
+  
+    <table>
+      <thead><tr><th>發放日</th><th>每股金額</th></tr></thead>
+      <tbody>
+        <tr><td>2025-07-31</td><td>3.00</td></tr>
+        <tr><td>2024-08-01</td><td>3.00</td></tr>
+        <tr><td>2023-08-04</td><td>3.15</td></tr>
+        <tr><td>2022-08-04</td><td>2.70</td></tr>
+        <tr><td>2021-09-09</td><td>2.70</td></tr>
+        <tr><td>2020-08-06</td><td>2.50</td></tr>
+        <tr><td>2019-08-01</td><td>2.50</td></tr>
+        <tr><td>2018-08-02</td><td>5.50</td></tr></tbody>
+    </table>
+
+</div>
+</body>
+</html>

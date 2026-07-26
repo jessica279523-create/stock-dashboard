@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>萬海 2615 · 個股詳情</title>
+<style>
+  :root {
+    --bg: #f5f0e8; --card: #ffffff; --ink: #2b2620; --sub: #8a8073;
+    --accent: #c1622f; --up: #d0392b; --down: #1f9254; --flat: #8a8073; --border: #e8e0d3;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+    font-family: -apple-system, "PingFang TC", "Noto Sans TC", sans-serif; padding: 24px 16px 60px; }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  a.back { color: var(--accent); font-size: 13px; text-decoration: none; }
+  h1 { font-size: 26px; margin: 10px 0 2px; }
+  .sub { color: var(--sub); font-size: 13px; margin-bottom: 20px; }
+  .section-title { font-size: 15px; font-weight: 700; margin: 26px 0 10px; color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; background: var(--card); border-radius: 12px;
+    overflow: hidden; border: 1px solid var(--border); font-size: 13.5px; }
+  th, td { padding: 9px 8px; text-align: right; }
+  td:first-child, th:first-child { text-align: left; }
+  thead { background: #f1ebe0; }
+  tr + tr { border-top: 1px solid var(--border); }
+  .up { color: var(--up); } .down { color: var(--down); } .flat { color: var(--flat); }
+  .trend-box, .info-box { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 14px; }
+  .trend-svg { width: 100%; height: 140px; display: block; }
+  .spark-labels { display: flex; justify-content: space-between; font-size: 11px; color: var(--sub); margin-top: 4px; }
+  .spark-empty { font-size: 12.5px; color: var(--sub); text-align: center; padding: 20px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="../index.html">← 回儀表板</a>
+  <h1>萬海 <span style="color:var(--sub); font-weight:400;">2615</span></h1>
+  <div class="sub">Wan Hai Lines Ltd. · Marine Shipping</div>
+
+  <div class="section-title">簡介</div>
+  <div class="info-box">
+    公司名稱:Wan Hai Lines Ltd.<br>
+    股票代碼:2615<br>
+    產業分類:Marine Shipping
+  </div>
+
+  <div class="section-title">走勢(近3個月收盤價)</div>
+  <div class="trend-box">
+    <svg viewBox="0 0 680 140" class="trend-svg" preserveAspectRatio="none">
+      <polyline fill="none" stroke="#d0392b" stroke-width="2.5" points="12.0,128.0 22.4,125.1 32.8,122.2 43.2,117.1 53.7,125.1 64.1,117.9 74.5,107.8 84.9,102.0 95.3,99.1 105.7,111.4 116.1,96.9 126.5,108.5 137.0,127.3 147.4,123.7 157.8,128.0 168.2,108.5 178.6,83.2 189.0,78.2 199.4,77.5 209.8,55.1 220.3,62.3 230.7,75.3 241.1,73.1 251.5,81.0 261.9,71.7 272.3,54.4 282.7,55.8 293.1,58.0 303.6,59.4 314.0,42.1 324.4,53.0 334.8,52.2 345.2,63.7 355.6,58.7 366.0,50.0 376.4,60.9 386.9,75.3 397.3,83.2 407.7,83.2 418.1,82.5 428.5,95.5 438.9,94.8 449.3,101.3 459.7,110.0 470.2,96.2 480.6,91.9 491.0,98.4 501.4,94.1 511.8,65.9 522.2,64.4 532.6,86.9 543.0,68.9 553.5,61.4 563.9,61.4 574.3,70.4 584.7,68.9 595.1,51.7 605.5,59.2 615.9,68.2 626.3,60.7 636.8,25.5 647.2,26.2 657.6,30.7 668.0,12.0" />
+    </svg>
+    <div class="spark-labels"><span>2026-04-24</span><span>2026-07-24</span></div>
+    </div>
+
+  <div class="section-title">價量(近10個交易日)</div>
+  
+    <table>
+      <thead><tr><th>日期</th><th>開盤</th><th>最高</th><th>最低</th><th>收盤</th><th>成交量</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>2026-07-24</td>
+          <td>84.10</td>
+          <td>87.90</td>
+          <td>84.10</td>
+          <td class="up">87.00</td>
+          <td>22,422,158</td>
+        </tr>
+        <tr>
+          <td>2026-07-23</td>
+          <td>85.50</td>
+          <td>85.60</td>
+          <td>83.60</td>
+          <td class="down">84.50</td>
+          <td>8,563,528</td>
+        </tr>
+        <tr>
+          <td>2026-07-22</td>
+          <td>85.20</td>
+          <td>87.40</td>
+          <td>84.80</td>
+          <td class="down">85.10</td>
+          <td>15,804,599</td>
+        </tr>
+        <tr>
+          <td>2026-07-21</td>
+          <td>81.80</td>
+          <td>85.80</td>
+          <td>81.60</td>
+          <td class="up">85.20</td>
+          <td>25,788,513</td>
+        </tr>
+        <tr>
+          <td>2026-07-20</td>
+          <td>81.00</td>
+          <td>83.40</td>
+          <td>79.80</td>
+          <td class="down">80.50</td>
+          <td>12,750,343</td>
+        </tr>
+        <tr>
+          <td>2026-07-17</td>
+          <td>80.30</td>
+          <td>81.50</td>
+          <td>79.50</td>
+          <td class="down">79.50</td>
+          <td>8,186,896</td>
+        </tr>
+        <tr>
+          <td>2026-07-16</td>
+          <td>81.70</td>
+          <td>82.00</td>
+          <td>80.40</td>
+          <td class="down">80.70</td>
+          <td>4,944,730</td>
+        </tr>
+        <tr>
+          <td>2026-07-15</td>
+          <td>80.40</td>
+          <td>81.70</td>
+          <td>79.50</td>
+          <td class="up">81.70</td>
+          <td>10,665,098</td>
+        </tr>
+        <tr>
+          <td>2026-07-14</td>
+          <td>80.30</td>
+          <td>81.00</td>
+          <td>78.10</td>
+          <td class="down">79.40</td>
+          <td>7,778,148</td>
+        </tr>
+        <tr>
+          <td>2026-07-13</td>
+          <td>79.60</td>
+          <td>79.90</td>
+          <td>78.80</td>
+          <td class="down">79.20</td>
+          <td>5,649,797</td>
+        </tr></tbody>
+    </table>
+
+  <div class="section-title">財務</div>
+  
+    <table>
+      <tbody>
+        <tr><td>每股盈餘(EPS)</td><td>10.82</td></tr>
+        <tr><td>營收</td><td>1,369.0 億</td></tr>
+        <tr><td>毛利率</td><td>26.50%</td></tr>
+        <tr><td>淨利率</td><td>22.21%</td></tr>
+        <tr><td>ROE(股東權益報酬率)</td><td>10.85%</td></tr>
+        <tr><td>市值</td><td>2,441.3 億</td></tr>
+        <tr><td>本益比(PE)</td><td>8.0</td></tr>
+        <tr><td>殖利率</td><td>3.45%</td></tr></tbody>
+    </table>
+
+  <div class="section-title">股利(近期發放紀錄)</div>
+  
+    <table>
+      <thead><tr><th>發放日</th><th>每股金額</th></tr></thead>
+      <tbody>
+        <tr><td>2026-07-06</td><td>3.00</td></tr>
+        <tr><td>2025-06-24</td><td>3.50</td></tr>
+        <tr><td>2024-06-13</td><td>1.50</td></tr>
+        <tr><td>2023-07-03</td><td>5.00</td></tr>
+        <tr><td>2022-07-20</td><td>10.50</td></tr>
+        <tr><td>2021-09-07</td><td>0.87</td></tr>
+        <tr><td>2020-08-27</td><td>0.63</td></tr>
+        <tr><td>2019-07-12</td><td>0.48</td></tr></tbody>
+    </table>
+
+</div>
+</body>
+</html>
