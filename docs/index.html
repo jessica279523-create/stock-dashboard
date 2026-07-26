@@ -50,7 +50,7 @@
     font-size: 12.5px;
     color: #6b5f4f;
     border-radius: 6px;
-    margin-bottom: 26px;
+    margin-bottom: 20px;
   }
   .section-title {
     display: flex;
@@ -67,6 +67,20 @@
     padding: 2px 7px;
     border-radius: 4px;
   }
+  .hl-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 24px; }
+  .hl-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--flat);
+    border-radius: 10px;
+    padding: 12px 14px;
+  }
+  .hl-card.up { border-left-color: var(--up); }
+  .hl-card.down { border-left-color: var(--down); }
+  .hl-label { font-size: 11px; color: var(--sub); margin-bottom: 4px; }
+  .hl-name { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
+  .hl-name span { font-weight: 400; color: var(--sub); font-size: 11px; }
+  .hl-pct { font-size: 18px; font-weight: 700; }
   .summary-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -78,6 +92,7 @@
   }
   @media (min-width: 640px) {
     .summary-grid { grid-template-columns: repeat(5, 1fr); }
+    .hl-row { grid-template-columns: 1fr 1fr; }
   }
   .summary-item .label { font-size: 11.5px; color: var(--sub); margin-bottom: 4px; }
   .summary-item .value { font-size: 22px; font-weight: 700; }
@@ -95,11 +110,21 @@
   th:first-child, td:first-child { text-align: left; }
   th { font-size: 11.5px; color: var(--sub); font-weight: 600; }
   tr + tr { border-top: 1px solid var(--border); }
+  tr.hot-row { background: #fff4ec; }
   .code { font-weight: 700; }
   .code .name { display: block; font-weight: 400; color: var(--sub); font-size: 11.5px; }
   .up { color: var(--up); }
   .down { color: var(--down); }
   .flat { color: var(--flat); }
+  .sector-block { margin-bottom: 22px; }
+  .sector-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--border);
+  }
   .watch-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -117,11 +142,22 @@
   }
   .watch-card.up { border-left-color: var(--up); }
   .watch-card.down { border-left-color: var(--down); }
+  .watch-card.hot { background: #fff4ec; border-left-width: 6px; }
   .watch-card.index { background: #f1ebe0; }
   .watch-name { font-size: 12.5px; font-weight: 700; margin-bottom: 6px; }
   .watch-name span { font-weight: 400; color: var(--sub); font-size: 11px; }
   .watch-price { font-size: 20px; font-weight: 700; margin-bottom: 4px; }
   .watch-change { font-size: 12px; }
+  .watch-fund { font-size: 10.5px; color: var(--sub); margin-top: 4px; }
+  .spark-box {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px;
+  }
+  .spark-svg { width: 100%; height: 90px; display: block; }
+  .spark-labels { display: flex; justify-content: space-between; font-size: 11px; color: var(--sub); margin-top: 4px; }
+  .spark-empty { font-size: 12.5px; color: var(--sub); text-align: center; padding: 20px 0; }
   footer { text-align: center; color: var(--sub); font-size: 11.5px; margin-top: 40px; }
 </style>
 </head>
@@ -131,12 +167,26 @@
   <h1>今日台股研究簡報</h1>
   <div class="subtitle">A daily reading of your Taiwan market watchlist</div>
   <div class="meta">
-    <span class="pill">數據日期 2026-07-25</span>
-    <span class="pill">產生時間 2026-07-25 23:26:40 (台北時間)</span>
-    <span class="pill">監控標的 27</span>
+    <span class="pill">數據日期 2026-07-27</span>
+    <span class="pill">產生時間 2026-07-27 00:32:06 (台北時間)</span>
+    <span class="pill">監控標的 26</span>
   </div>
   <div class="notice">
-    本頁面僅供個人追蹤與學習使用,數據來自 Yahoo Finance(可能有延遲),不構成投資建議。
+    本頁面僅供個人追蹤與學習使用,數據來自台灣證交所/Yahoo Finance(可能有延遲),不構成投資建議。
+  </div>
+
+  <div class="section-title"><span class="num">★</span> 今日重點摘要</div>
+  <div class="hl-row">
+        <div class="hl-card up">
+          <div class="hl-label">今日漲最多</div>
+          <div class="hl-name">緯創 <span>3231</span></div>
+          <div class="hl-pct up">+3.17%</div>
+        </div>
+        <div class="hl-card down">
+          <div class="hl-label">今日跌最多</div>
+          <div class="hl-name">國巨 <span>2327</span></div>
+          <div class="hl-pct down">-7.76%</div>
+        </div>
   </div>
 
   <div class="section-title"><span class="num">01</span> 我的持股</div>
@@ -145,7 +195,7 @@
     <div class="summary-item"><div class="label">未實現損益</div><div class="value up">+9,750</div></div>
     <div class="summary-item"><div class="label">損益幅度</div><div class="value up">+4.64%</div></div>
     <div class="summary-item"><div class="label">持倉數</div><div class="value">3</div></div>
-    <div class="summary-item"><div class="label">監控近況上漲占比</div><div class="value">37.0%</div></div>
+    <div class="summary-item"><div class="label">監控近況上漲占比</div><div class="value">38.5%</div></div>
   </div>
 
   <table style="margin-top:12px;">
@@ -155,7 +205,7 @@
       </tr>
     </thead>
     <tbody>
-        <tr>
+        <tr class="">
           <td class="code">3231<span class="name">緯創</span></td>
           <td>400</td>
           <td>179.00</td>
@@ -165,7 +215,7 @@
           <td class="up">+13,000</td>
           <td class="up">+22.18%</td>
         </tr>
-        <tr>
+        <tr class="">
           <td class="code">2330<span class="name">台積電</span></td>
           <td>50</td>
           <td>2,350.00</td>
@@ -175,11 +225,11 @@
           <td class="down">-3,250</td>
           <td class="down">-2.69%</td>
         </tr>
-        <tr>
+        <tr class=" hot-row">
           <td class="code">6770<span class="name">力積電</span></td>
           <td>500</td>
           <td>61.60</td>
-          <td class="down">-6.67%</td>
+          <td class="down">-6.67% 🔥</td>
           <td>30,800</td>
           <td>61.60</td>
           <td class="flat">+0</td>
@@ -188,160 +238,223 @@
     </tbody>
   </table>
 
-  <div class="section-title"><span class="num">02</span> 大盤指數</div>
+  <div class="section-title"><span class="num">02</span> 損益走勢圖</div>
+  <div class="spark-box"><div class="spark-empty">累積更多天數的資料後,這裡會顯示損益走勢圖</div></div>
+
+  <div class="section-title"><span class="num">03</span> 大盤指數</div>
   <div class="watch-grid">
-        <div class="watch-card index up">
+        <div class="watch-card index down">
           <div class="watch-name">加權指數</div>
-          <div class="watch-price up">44,850.81</div>
-          <div class="watch-change up">+25.03 &nbsp; +0.06%</div>
+          <div class="watch-price down">43,654.84</div>
+          <div class="watch-change down">-1,195.97 &nbsp; -2.67%</div>
         </div>
-        <div class="watch-card index flat">
+        <div class="watch-card index down">
           <div class="watch-name">櫃檯指數(OTC)</div>
-          <div class="watch-price flat">--</div>
-          <div class="watch-change flat">-- &nbsp; --%</div>
+          <div class="watch-price down">377.63</div>
+          <div class="watch-change down">-14.48 &nbsp; -3.69%</div>
         </div>
   </div>
 
-  <div class="section-title"><span class="num">03</span> 自選監控清單</div>
-  <div class="watch-grid">
+  <div class="section-title"><span class="num">04</span> 自選監控清單(依產業分類,漲跌幅排序)</div>
+  
+    <div class="sector-block">
+      <div class="sector-title">航運</div>
+      <div class="watch-grid">
         <div class="watch-card up">
-          <div class="watch-name">長榮 <span>2603</span></div>
-          <div class="watch-price up">206.00</div>
-          <div class="watch-change up">+2.50 &nbsp; +1.23%</div>
+          <div class="watch-name">萬海 <span>2615</span></div>
+          <div class="watch-price up">87.00</div>
+          <div class="watch-change up">+2.50 &nbsp; +2.96%</div>
+          <div class="watch-fund">PE 8.0 · 殖利率 3.45%</div>
         </div>
         <div class="watch-card up">
           <div class="watch-name">陽明 <span>2609</span></div>
           <div class="watch-price up">51.50</div>
           <div class="watch-change up">+1.00 &nbsp; +1.98%</div>
+          <div class="watch-fund">PE 16.7 · 殖利率 3.88%</div>
         </div>
         <div class="watch-card up">
-          <div class="watch-name">萬海 <span>2615</span></div>
-          <div class="watch-price up">87.00</div>
-          <div class="watch-change up">+2.50 &nbsp; +2.96%</div>
-        </div>
-        <div class="watch-card down">
-          <div class="watch-name">台泥 <span>1101</span></div>
-          <div class="watch-price down">23.80</div>
-          <div class="watch-change down">-0.20 &nbsp; -0.83%</div>
-        </div>
-        <div class="watch-card up">
-          <div class="watch-name">第一金 <span>2892</span></div>
-          <div class="watch-price up">34.30</div>
-          <div class="watch-change up">+0.15 &nbsp; +0.44%</div>
+          <div class="watch-name">長榮 <span>2603</span></div>
+          <div class="watch-price up">206.00</div>
+          <div class="watch-change up">+2.50 &nbsp; +1.23%</div>
+          <div class="watch-fund">PE 6.5 · 殖利率 7.77%</div>
         </div>
         <div class="watch-card down">
           <div class="watch-name">長榮航 <span>2618</span></div>
           <div class="watch-price down">40.70</div>
           <div class="watch-change down">-0.15 &nbsp; -0.37%</div>
+          <div class="watch-fund">PE 7.8 · 殖利率 4.91%</div>
         </div>
         <div class="watch-card down">
           <div class="watch-name">華航 <span>2610</span></div>
           <div class="watch-price down">20.50</div>
           <div class="watch-change down">-0.10 &nbsp; -0.49%</div>
+          <div class="watch-fund">PE 8.1 · 殖利率 3.97%</div>
         </div>
-        <div class="watch-card down">
-          <div class="watch-name">台橡 <span>2103</span></div>
-          <div class="watch-price down">23.30</div>
-          <div class="watch-change down">-0.55 &nbsp; -2.31%</div>
-        </div>
-        <div class="watch-card down">
-          <div class="watch-name">彩晶 <span>6116</span></div>
-          <div class="watch-price down">13.80</div>
-          <div class="watch-change down">-0.55 &nbsp; -3.83%</div>
+      </div>
+    </div>
+    <div class="sector-block">
+      <div class="sector-title">電子代工/零組件</div>
+      <div class="watch-grid">
+        <div class="watch-card up">
+          <div class="watch-name">英業達 <span>2356</span></div>
+          <div class="watch-price up">64.50</div>
+          <div class="watch-change up">+1.50 &nbsp; +2.38%</div>
+          <div class="watch-fund">PE 26.8 · 殖利率 3.10%</div>
         </div>
         <div class="watch-card up">
           <div class="watch-name">仁寶 <span>2324</span></div>
           <div class="watch-price up">37.20</div>
           <div class="watch-change up">+0.45 &nbsp; +1.22%</div>
-        </div>
-        <div class="watch-card up">
-          <div class="watch-name">英業達 <span>2356</span></div>
-          <div class="watch-price up">64.50</div>
-          <div class="watch-change up">+1.50 &nbsp; +2.38%</div>
-        </div>
-        <div class="watch-card down">
-          <div class="watch-name">友達 <span>2409</span></div>
-          <div class="watch-price down">25.50</div>
-          <div class="watch-change down">-0.75 &nbsp; -2.86%</div>
-        </div>
-        <div class="watch-card down">
-          <div class="watch-name">力積電 <span>6770</span></div>
-          <div class="watch-price down">61.60</div>
-          <div class="watch-change down">-4.40 &nbsp; -6.67%</div>
+          <div class="watch-fund">PE 28.2 · 殖利率 2.96%</div>
         </div>
         <div class="watch-card down">
           <div class="watch-name">光寶科 <span>2301</span></div>
           <div class="watch-price down">214.50</div>
           <div class="watch-change down">-3.50 &nbsp; -1.61%</div>
-        </div>
-        <div class="watch-card down">
-          <div class="watch-name">中纖 <span>1718</span></div>
-          <div class="watch-price down">11.00</div>
-          <div class="watch-change down">-0.35 &nbsp; -3.08%</div>
-        </div>
-        <div class="watch-card down">
-          <div class="watch-name">國巨 <span>2327</span></div>
-          <div class="watch-price down">642.00</div>
-          <div class="watch-change down">-54.00 &nbsp; -7.76%</div>
-        </div>
-        <div class="watch-card down">
-          <div class="watch-name">華邦電 <span>2344</span></div>
-          <div class="watch-price down">154.50</div>
-          <div class="watch-change down">-6.50 &nbsp; -4.04%</div>
-        </div>
-        <div class="watch-card up">
-          <div class="watch-name">兆豐金 <span>2886</span></div>
-          <div class="watch-price up">48.45</div>
-          <div class="watch-change up">+0.30 &nbsp; +0.62%</div>
-        </div>
-        <div class="watch-card down">
-          <div class="watch-name">國泰金 <span>2882</span></div>
-          <div class="watch-price down">97.00</div>
-          <div class="watch-change down">-0.30 &nbsp; -0.31%</div>
-        </div>
-        <div class="watch-card up">
-          <div class="watch-name">彰銀 <span>2801</span></div>
-          <div class="watch-price up">24.35</div>
-          <div class="watch-change up">+0.10 &nbsp; +0.41%</div>
-        </div>
-        <div class="watch-card down">
-          <div class="watch-name">聯電 <span>2303</span></div>
-          <div class="watch-price down">128.00</div>
-          <div class="watch-change down">-10.50 &nbsp; -7.58%</div>
-        </div>
-        <div class="watch-card down">
-          <div class="watch-name">廣宇 <span>2328</span></div>
-          <div class="watch-price down">45.30</div>
-          <div class="watch-change down">-1.20 &nbsp; -2.58%</div>
+          <div class="watch-fund">PE 31.7 · 殖利率 3.50%</div>
         </div>
         <div class="watch-card down">
           <div class="watch-name">鴻海 <span>2317</span></div>
           <div class="watch-price down">252.50</div>
           <div class="watch-change down">-5.00 &nbsp; -1.94%</div>
+          <div class="watch-fund">PE 18.8 · 殖利率 2.84%</div>
         </div>
         <div class="watch-card down">
-          <div class="watch-name">群創 <span>3481</span></div>
-          <div class="watch-price down">49.50</div>
-          <div class="watch-change down">-2.40 &nbsp; -4.62%</div>
+          <div class="watch-name">廣宇 <span>2328</span></div>
+          <div class="watch-price down">45.30</div>
+          <div class="watch-change down">-1.20 &nbsp; -2.58%</div>
+          <div class="watch-fund">PE 46.2 · 殖利率 1.99%</div>
         </div>
-        <div class="watch-card down">
-          <div class="watch-name">統一FANG+ <span>00757</span></div>
-          <div class="watch-price down">128.60</div>
-          <div class="watch-change down">-2.15 &nbsp; -1.64%</div>
+        <div class="watch-card down hot">
+          <div class="watch-name">🔥 國巨 <span>2327</span></div>
+          <div class="watch-price down">642.00</div>
+          <div class="watch-change down">-54.00 &nbsp; -7.76%</div>
+          <div class="watch-fund">PE 50.5 · 殖利率 93.00%</div>
+        </div>
+      </div>
+    </div>
+    <div class="sector-block">
+      <div class="sector-title">金融</div>
+      <div class="watch-grid">
+        <div class="watch-card up">
+          <div class="watch-name">兆豐金 <span>2886</span></div>
+          <div class="watch-price up">48.45</div>
+          <div class="watch-change up">+0.30 &nbsp; +0.62%</div>
+          <div class="watch-fund">PE 20.5 · 殖利率 3.30%</div>
         </div>
         <div class="watch-card up">
-          <div class="watch-name">統一 <span>1216</span></div>
-          <div class="watch-price up">77.40</div>
-          <div class="watch-change up">+0.40 &nbsp; +0.52%</div>
+          <div class="watch-name">第一金 <span>2892</span></div>
+          <div class="watch-price up">34.30</div>
+          <div class="watch-change up">+0.15 &nbsp; +0.44%</div>
+          <div class="watch-fund">PE 18.3 · 殖利率 2.77%</div>
+        </div>
+        <div class="watch-card up">
+          <div class="watch-name">彰銀 <span>2801</span></div>
+          <div class="watch-price up">24.35</div>
+          <div class="watch-change up">+0.10 &nbsp; +0.41%</div>
+          <div class="watch-fund">PE 16.2 · 殖利率 3.29%</div>
         </div>
         <div class="watch-card up">
           <div class="watch-name">中信金 <span>2891</span></div>
           <div class="watch-price up">63.60</div>
           <div class="watch-change up">+0.10 &nbsp; +0.16%</div>
+          <div class="watch-fund">PE 15.7 · 殖利率 3.93%</div>
         </div>
-  </div>
+        <div class="watch-card down">
+          <div class="watch-name">國泰金 <span>2882</span></div>
+          <div class="watch-price down">97.00</div>
+          <div class="watch-change down">-0.30 &nbsp; -0.31%</div>
+          <div class="watch-fund">PE 13.7 · 殖利率 3.61%</div>
+        </div>
+      </div>
+    </div>
+    <div class="sector-block">
+      <div class="sector-title">民生消費</div>
+      <div class="watch-grid">
+        <div class="watch-card up">
+          <div class="watch-name">統一 <span>1216</span></div>
+          <div class="watch-price up">77.40</div>
+          <div class="watch-change up">+0.40 &nbsp; +0.52%</div>
+          <div class="watch-fund">PE 22.5 · 殖利率 3.88%</div>
+        </div>
+      </div>
+    </div>
+    <div class="sector-block">
+      <div class="sector-title">傳產</div>
+      <div class="watch-grid">
+        <div class="watch-card down">
+          <div class="watch-name">台泥 <span>1101</span></div>
+          <div class="watch-price down">23.80</div>
+          <div class="watch-change down">-0.20 &nbsp; -0.83%</div>
+          <div class="watch-fund">PE -- · 殖利率 3.36%</div>
+        </div>
+        <div class="watch-card down">
+          <div class="watch-name">台橡 <span>2103</span></div>
+          <div class="watch-price down">23.30</div>
+          <div class="watch-change down">-0.55 &nbsp; -2.31%</div>
+          <div class="watch-fund">PE 34.8 · 殖利率 1.16%</div>
+        </div>
+        <div class="watch-card down">
+          <div class="watch-name">中纖 <span>1718</span></div>
+          <div class="watch-price down">11.00</div>
+          <div class="watch-change down">-0.35 &nbsp; -3.08%</div>
+          <div class="watch-fund">PE 122.2 · 殖利率 --</div>
+        </div>
+      </div>
+    </div>
+    <div class="sector-block">
+      <div class="sector-title">ETF</div>
+      <div class="watch-grid">
+        <div class="watch-card down">
+          <div class="watch-name">統一FANG+ <span>00757</span></div>
+          <div class="watch-price down">128.60</div>
+          <div class="watch-change down">-2.15 &nbsp; -1.64%</div>
+          <div class="watch-fund">PE 29.8 · 殖利率 0.00%</div>
+        </div>
+      </div>
+    </div>
+    <div class="sector-block">
+      <div class="sector-title">面板</div>
+      <div class="watch-grid">
+        <div class="watch-card down">
+          <div class="watch-name">友達 <span>2409</span></div>
+          <div class="watch-price down">25.50</div>
+          <div class="watch-change down">-0.75 &nbsp; -2.86%</div>
+          <div class="watch-fund">PE 79.7 · 殖利率 1.57%</div>
+        </div>
+        <div class="watch-card down">
+          <div class="watch-name">彩晶 <span>6116</span></div>
+          <div class="watch-price down">13.80</div>
+          <div class="watch-change down">-0.55 &nbsp; -3.83%</div>
+          <div class="watch-fund">PE -- · 殖利率 --</div>
+        </div>
+        <div class="watch-card down">
+          <div class="watch-name">群創 <span>3481</span></div>
+          <div class="watch-price down">49.50</div>
+          <div class="watch-change down">-2.40 &nbsp; -4.62%</div>
+          <div class="watch-fund">PE 1,650.0 · 殖利率 2.02%</div>
+        </div>
+      </div>
+    </div>
+    <div class="sector-block">
+      <div class="sector-title">半導體</div>
+      <div class="watch-grid">
+        <div class="watch-card down">
+          <div class="watch-name">華邦電 <span>2344</span></div>
+          <div class="watch-price down">154.50</div>
+          <div class="watch-change down">-6.50 &nbsp; -4.04%</div>
+          <div class="watch-fund">PE 45.8 · 殖利率 32.00%</div>
+        </div>
+        <div class="watch-card down hot">
+          <div class="watch-name">🔥 聯電 <span>2303</span></div>
+          <div class="watch-price down">128.00</div>
+          <div class="watch-change down">-10.50 &nbsp; -7.58%</div>
+          <div class="watch-fund">PE 32.5 · 殖利率 2.04%</div>
+        </div>
+      </div>
+    </div>
 
-  <footer>由 GitHub Actions 每日自動更新 · Powered by yfinance</footer>
+  <footer>由 GitHub Actions 每日自動更新 · Powered by TWSE + yfinance · 🔥 標示當日漲跌幅 ≥ 5.0%</footer>
 </div>
 </body>
 </html>
