@@ -154,27 +154,86 @@ def fetch_stock_quote(code: str):
     return fetch_quote(to_yf_ticker(code))
 
 
-def fetch_fundamentals(code: str):
+def fetch_yf_detail(code: str):
     """
-    抓本益比(PE)與殖利率(Dividend Yield)。
-    yfinance 的 .info 有時會抓不到或很慢,失敗就回傳 None,畫面上會顯示 "--"。
+    抓取個股詳細資料,供「點進去看詳情」的子頁面使用:
+      - fundamentals: 簡介(公司名/產業)、本益比、殖利率、EPS、營收、毛利率、淨利率、ROE、市值
+      - price_history: 近 3 個月的走勢與價量(開高低收+成交量)
+      - dividends: 近期股利發放紀錄
+    yfinance 的 .info / .history / .dividends 有時會抓不到或很慢,失敗就回傳空值,
+    畫面上會顯示 "資料暫時無法取得"。
     """
+    ticker = to_yf_ticker(code)
+    fundamentals = {
+        "long_name": None, "industry": None, "pe": None, "dividend_yield": None,
+        "eps": None, "revenue": None, "gross_margin": None, "profit_margin": None,
+        "roe": None, "market_cap": None,
+    }
+    price_history = []
+    dividends = []
+
     try:
-        t = yf.Ticker(to_yf_ticker(code))
-        info = t.info or {}
+        t = yf.Ticker(ticker)
+
+        try:
+            info = t.info or {}
+        except Exception as e:
+            print(f"[警告] 抓取 {code} info 失敗: {e}")
+            info = {}
+
         pe = info.get("trailingPE")
         yield_raw = info.get("dividendYield")
         div_yield = None
         if yield_raw is not None:
-            # yfinance 有時回傳 0.03 代表 3%,有時已經是 3 代表 3%,做個保護判斷
             div_yield = yield_raw * 100 if yield_raw < 1 else yield_raw
-        return {
+
+        def pct_field(key):
+            v = info.get(key)
+            if v is None:
+                return None
+            return round(v * 100, 2) if v < 1 else round(v, 2)
+
+        fundamentals = {
+            "long_name": info.get("longName") or info.get("shortName"),
+            "industry": info.get("industry"),
             "pe": round(pe, 1) if isinstance(pe, (int, float)) else None,
             "dividend_yield": round(div_yield, 2) if isinstance(div_yield, (int, float)) else None,
+            "eps": info.get("trailingEps"),
+            "revenue": info.get("totalRevenue"),
+            "gross_margin": pct_field("grossMargins"),
+            "profit_margin": pct_field("profitMargins"),
+            "roe": pct_field("returnOnEquity"),
+            "market_cap": info.get("marketCap"),
         }
+
+        try:
+            hist = t.history(period="3mo")
+            for date, row in hist.iterrows():
+                vol = row.get("Volume")
+                price_history.append({
+                    "date": date.strftime("%Y-%m-%d"),
+                    "open": round(float(row["Open"]), 2),
+                    "high": round(float(row["High"]), 2),
+                    "low": round(float(row["Low"]), 2),
+                    "close": round(float(row["Close"]), 2),
+                    "volume": int(vol) if vol == vol else None,  # vol==vol 排除 NaN
+                })
+        except Exception as e:
+            print(f"[警告] 抓取 {code} 走勢/價量失敗: {e}")
+
+        try:
+            div_series = t.dividends
+            if div_series is not None and len(div_series) > 0:
+                for date, amount in div_series.tail(8).items():
+                    dividends.append({"date": date.strftime("%Y-%m-%d"), "amount": round(float(amount), 2)})
+                dividends.reverse()
+        except Exception as e:
+            print(f"[警告] 抓取 {code} 股利失敗: {e}")
+
     except Exception as e:
-        print(f"[警告] 抓取 {code} 基本面資料失敗: {e}")
-        return {"pe": None, "dividend_yield": None}
+        print(f"[警告] 抓取 {code} 詳細資料整體失敗: {e}")
+
+    return {"fundamentals": fundamentals, "price_history": price_history, "dividends": dividends}
 
 
 # ---------------------------------------------------------------------------
@@ -209,12 +268,17 @@ def build_data():
     holdings_out = []
     total_value = 0.0
     total_cost = 0.0
+    details = {}  # code -> {fundamentals, price_history, dividends},給子頁面用
 
     for h in HOLDINGS:
         q = fetch_stock_quote(h["code"])
+        detail = fetch_yf_detail(h["code"])
+        details[h["code"]] = detail
+        fund = detail["fundamentals"]
         if q is None:
             holdings_out.append({**h, "price": None, "change": None, "pct": None,
-                                  "market_value": None, "pl": None, "pl_pct": None})
+                                  "market_value": None, "pl": None, "pl_pct": None,
+                                  "pe": fund.get("pe"), "dividend_yield": fund.get("dividend_yield")})
             continue
         market_value = q["price"] * h["shares"]
         cost_value = h["cost"] * h["shares"]
@@ -226,6 +290,7 @@ def build_data():
             **h,
             "price": q["price"], "change": q["change"], "pct": q["pct"],
             "market_value": market_value, "pl": pl, "pl_pct": pl_pct,
+            "pe": fund.get("pe"), "dividend_yield": fund.get("dividend_yield"),
         })
 
     watch_out = []
@@ -233,14 +298,17 @@ def build_data():
     valid_count = 0
     for w in WATCHLIST:
         q = fetch_stock_quote(w["code"])
-        fund = fetch_fundamentals(w["code"])
+        detail = fetch_yf_detail(w["code"])
+        details[w["code"]] = detail
+        fund = detail["fundamentals"]
+        fund_slim = {"pe": fund.get("pe"), "dividend_yield": fund.get("dividend_yield")}
         if q is None:
-            watch_out.append({**w, "price": None, "change": None, "pct": None, **fund})
+            watch_out.append({**w, "price": None, "change": None, "pct": None, **fund_slim})
             continue
         valid_count += 1
         if q["change"] > 0:
             up_count += 1
-        watch_out.append({**w, **q, **fund})
+        watch_out.append({**w, **q, **fund_slim})
 
     # 6. 依漲跌幅排序(有資料的排前面,None 排最後)
     watch_out.sort(key=lambda w: (w["pct"] is None, -(w["pct"] or 0)))
@@ -284,6 +352,7 @@ def build_data():
         "watchlist": watch_out,
         "indices": index_out,
         "history": history,
+        "details": details,
         "highlight": {
             "top_gainer": top_gainer,
             "top_loser": top_loser,

@@ -43,7 +43,7 @@ def holding_row(h):
     hot_icon = " 🔥" if is_hot(h.get("pct")) else ""
     return f"""
         <tr class="{hot}">
-          <td class="code">{h['code']}<span class="name">{h['name']}</span></td>
+          <td class="code"><a class="stock-link" href="stocks/{h['code']}.html">{h['code']}<span class="name">{h['name']}</span></a></td>
           <td>{fmt(h['shares'], 0)}</td>
           <td>{fmt(h['price'])}</td>
           <td class="{color_class(h['change'])}">{sign(h['pct'])}{fmt(h['pct'])}%{hot_icon}</td>
@@ -61,12 +61,12 @@ def watch_card(w):
     pe_txt = fmt(w.get("pe"), 1) if w.get("pe") is not None else "--"
     yld_txt = f"{fmt(w.get('dividend_yield'), 2)}%" if w.get("dividend_yield") is not None else "--"
     return f"""
-        <div class="watch-card {cls}{hot}">
+        <a class="watch-card {cls}{hot}" href="stocks/{w['code']}.html">
           <div class="watch-name">{hot_icon}{w['name']} <span>{w['code']}</span></div>
           <div class="watch-price {cls}">{fmt(w.get('price'))}</div>
           <div class="watch-change {cls}">{sign(w.get('change'))}{fmt(w.get('change'))} &nbsp; {sign(w.get('pct'))}{fmt(w.get('pct'))}%</div>
           <div class="watch-fund">PE {pe_txt} · 殖利率 {yld_txt}</div>
-        </div>"""
+        </a>"""
 
 
 def index_card(i):
@@ -112,7 +112,7 @@ def sparkline_svg(history, width=680, height=90):
     points_str = " ".join(points)
 
     last_up = values[-1] >= values[0]
-    line_color = "#1f9254" if last_up else "#d0392b"
+    line_color = "#d0392b" if last_up else "#1f9254"  # 紅漲綠跌(台股慣例)
 
     first_date = dates[0]
     last_date = dates[-1]
@@ -123,6 +123,173 @@ def sparkline_svg(history, width=680, height=90):
     </svg>
     <div class="spark-labels"><span>{first_date}</span><span>{last_date}</span></div>
     """
+
+
+def price_trend_svg(price_history, width=680, height=140):
+    """走勢圖:近3個月收盤價折線圖。"""
+    if not price_history or len(price_history) < 2:
+        return '<div class="spark-empty">目前沒有足夠的走勢資料</div>'
+    closes = [p["close"] for p in price_history]
+    dates = [p["date"] for p in price_history]
+    vmin, vmax = min(closes), max(closes)
+    vrange = (vmax - vmin) or 1
+    pad = 12
+    n = len(closes)
+    step = (width - 2 * pad) / (n - 1) if n > 1 else 0
+    points = []
+    for idx, v in enumerate(closes):
+        x = pad + idx * step
+        y = height - pad - ((v - vmin) / vrange) * (height - 2 * pad)
+        points.append(f"{x:.1f},{y:.1f}")
+    points_str = " ".join(points)
+    line_color = "#d0392b" if closes[-1] >= closes[0] else "#1f9254"
+    return f"""
+    <svg viewBox="0 0 {width} {height}" class="trend-svg" preserveAspectRatio="none">
+      <polyline fill="none" stroke="{line_color}" stroke-width="2.5" points="{points_str}" />
+    </svg>
+    <div class="spark-labels"><span>{dates[0]}</span><span>{dates[-1]}</span></div>
+    """
+
+
+def price_volume_table(price_history, rows=10):
+    """價量表:近 N 個交易日的開高低收+成交量。"""
+    if not price_history:
+        return '<div class="spark-empty">目前沒有價量資料</div>'
+    recent = price_history[-rows:][::-1]
+    body = ""
+    for p in recent:
+        cls = "up" if p["close"] >= p["open"] else "down"
+        vol_txt = f"{p['volume']:,}" if p.get("volume") is not None else "--"
+        body += f"""
+        <tr>
+          <td>{p['date']}</td>
+          <td>{fmt(p['open'])}</td>
+          <td>{fmt(p['high'])}</td>
+          <td>{fmt(p['low'])}</td>
+          <td class="{cls}">{fmt(p['close'])}</td>
+          <td>{vol_txt}</td>
+        </tr>"""
+    return f"""
+    <table>
+      <thead><tr><th>日期</th><th>開盤</th><th>最高</th><th>最低</th><th>收盤</th><th>成交量</th></tr></thead>
+      <tbody>{body}</tbody>
+    </table>"""
+
+
+def financials_block(fund):
+    """財務區塊:EPS、營收、毛利率、淨利率、ROE、市值、本益比、殖利率。"""
+    def big_num(n):
+        if n is None:
+            return "--"
+        if n >= 1e8:
+            return f"{n/1e8:,.1f} 億"
+        if n >= 1e4:
+            return f"{n/1e4:,.1f} 萬"
+        return f"{n:,.0f}"
+
+    rows = [
+        ("每股盈餘(EPS)", fmt(fund.get("eps"))),
+        ("營收", big_num(fund.get("revenue"))),
+        ("毛利率", f"{fmt(fund.get('gross_margin'))}%" if fund.get("gross_margin") is not None else "--"),
+        ("淨利率", f"{fmt(fund.get('profit_margin'))}%" if fund.get("profit_margin") is not None else "--"),
+        ("ROE(股東權益報酬率)", f"{fmt(fund.get('roe'))}%" if fund.get("roe") is not None else "--"),
+        ("市值", big_num(fund.get("market_cap"))),
+        ("本益比(PE)", fmt(fund.get("pe"), 1) if fund.get("pe") is not None else "--"),
+        ("殖利率", f"{fmt(fund.get('dividend_yield'))}%" if fund.get("dividend_yield") is not None else "--"),
+    ]
+    body = "".join(f"""
+        <tr><td>{label}</td><td>{value}</td></tr>""" for label, value in rows)
+    return f"""
+    <table>
+      <tbody>{body}</tbody>
+    </table>"""
+
+
+def dividends_table(dividends):
+    """股利表:近期股利發放紀錄。"""
+    if not dividends:
+        return '<div class="spark-empty">目前查不到股利發放紀錄</div>'
+    body = "".join(f"""
+        <tr><td>{d['date']}</td><td>{fmt(d['amount'])}</td></tr>""" for d in dividends)
+    return f"""
+    <table>
+      <thead><tr><th>發放日</th><th>每股金額</th></tr></thead>
+      <tbody>{body}</tbody>
+    </table>"""
+
+
+STOCK_PAGE_CSS = """
+  :root {
+    --bg: #f5f0e8; --card: #ffffff; --ink: #2b2620; --sub: #8a8073;
+    --accent: #c1622f; --up: #d0392b; --down: #1f9254; --flat: #8a8073; --border: #e8e0d3;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+    font-family: -apple-system, "PingFang TC", "Noto Sans TC", sans-serif; padding: 24px 16px 60px; }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  a.back { color: var(--accent); font-size: 13px; text-decoration: none; }
+  h1 { font-size: 26px; margin: 10px 0 2px; }
+  .sub { color: var(--sub); font-size: 13px; margin-bottom: 20px; }
+  .section-title { font-size: 15px; font-weight: 700; margin: 26px 0 10px; color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; background: var(--card); border-radius: 12px;
+    overflow: hidden; border: 1px solid var(--border); font-size: 13.5px; }
+  th, td { padding: 9px 8px; text-align: right; }
+  td:first-child, th:first-child { text-align: left; }
+  thead { background: #f1ebe0; }
+  tr + tr { border-top: 1px solid var(--border); }
+  .up { color: var(--up); } .down { color: var(--down); } .flat { color: var(--flat); }
+  .trend-box, .info-box { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 14px; }
+  .trend-svg { width: 100%; height: 140px; display: block; }
+  .spark-labels { display: flex; justify-content: space-between; font-size: 11px; color: var(--sub); margin-top: 4px; }
+  .spark-empty { font-size: 12.5px; color: var(--sub); text-align: center; padding: 20px 0; }
+"""
+
+
+def build_stock_page(code, name, sector, detail):
+    fund = detail.get("fundamentals", {})
+    price_history = detail.get("price_history", [])
+    dividends = detail.get("dividends", [])
+    long_name = fund.get("long_name") or name
+    industry = fund.get("industry") or sector or "--"
+
+    return f"""<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{name} {code} · 個股詳情</title>
+<style>{STOCK_PAGE_CSS}</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="../index.html">← 回儀表板</a>
+  <h1>{name} <span style="color:var(--sub); font-weight:400;">{code}</span></h1>
+  <div class="sub">{long_name} · {industry}</div>
+
+  <div class="section-title">簡介</div>
+  <div class="info-box">
+    公司名稱:{long_name}<br>
+    股票代碼:{code}<br>
+    產業分類:{industry}
+  </div>
+
+  <div class="section-title">走勢(近3個月收盤價)</div>
+  <div class="trend-box">{price_trend_svg(price_history)}</div>
+
+  <div class="section-title">價量(近10個交易日)</div>
+  {price_volume_table(price_history)}
+
+  <div class="section-title">財務</div>
+  {financials_block(fund)}
+
+  <div class="section-title">股利(近期發放紀錄)</div>
+  {dividends_table(dividends)}
+
+</div>
+</body>
+</html>
+"""
+
 
 
 summary = D["summary"]
@@ -174,8 +341,8 @@ HTML = f"""<!DOCTYPE html>
     --ink: #2b2620;
     --sub: #8a8073;
     --accent: #c1622f;
-    --up: #1f9254;
-    --down: #d0392b;
+    --up: #d0392b;
+    --down: #1f9254;
     --flat: #8a8073;
     --border: #e8e0d3;
   }}
@@ -275,6 +442,7 @@ HTML = f"""<!DOCTYPE html>
   tr + tr {{ border-top: 1px solid var(--border); }}
   tr.hot-row {{ background: #fff4ec; }}
   .code {{ font-weight: 700; }}
+  .code a, a.stock-link {{ color: inherit; text-decoration: none; display: block; }}
   .code .name {{ display: block; font-weight: 400; color: var(--sub); font-size: 11.5px; }}
   .up {{ color: var(--up); }}
   .down {{ color: var(--down); }}
@@ -302,6 +470,9 @@ HTML = f"""<!DOCTYPE html>
     border-left: 4px solid var(--flat);
     border-radius: 10px;
     padding: 12px 14px;
+    display: block;
+    text-decoration: none;
+    color: inherit;
   }}
   .watch-card.up {{ border-left-color: var(--up); }}
   .watch-card.down {{ border-left-color: var(--down); }}
@@ -381,3 +552,28 @@ with open("docs/index.html", "w", encoding="utf-8") as f:
     f.write(HTML)
 
 print("已產生 docs/index.html")
+
+# ---------------------------------------------------------------------------
+# 產生每檔股票的詳情子頁面(簡介/走勢/價量/財務/股利)
+# ---------------------------------------------------------------------------
+import os
+
+os.makedirs("docs/stocks", exist_ok=True)
+
+name_sector_map = {}
+for h in D["holdings"]:
+    name_sector_map[h["code"]] = {"name": h["name"], "sector": "持股"}
+for w in D["watchlist"]:
+    name_sector_map[w["code"]] = {"name": w["name"], "sector": w.get("sector", "監控")}
+
+details = D.get("details", {})
+count = 0
+for code, detail in details.items():
+    info = name_sector_map.get(code, {"name": code, "sector": ""})
+    page_html = build_stock_page(code, info["name"], info["sector"], detail)
+    with open(f"docs/stocks/{code}.html", "w", encoding="utf-8") as f:
+        f.write(page_html)
+    count += 1
+
+print(f"已產生 {count} 個個股詳情頁面(docs/stocks/)")
+
