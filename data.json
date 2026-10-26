@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-23 19:30:30",
-  "data_date": "2026-10-23",
+  "generated_at": "2026-10-26 20:49:10",
+  "data_date": "2026-10-26",
   "holdings": [
     {
       "code": "3231",
@@ -73,7 +73,7 @@
       "price": 119.5,
       "change": 3.0,
       "pct": 2.575107296137339,
-      "pe": 8.0,
+      "pe": 8.2,
       "dividend_yield": 2.51
     },
     {
@@ -103,7 +103,7 @@
       "price": 29.9,
       "change": 0.29999999999999716,
       "pct": 1.0135135135135038,
-      "pe": 19.4,
+      "pe": 19.7,
       "dividend_yield": 2.68
     },
     {
@@ -133,7 +133,7 @@
       "price": 42.2,
       "change": 0.15000000000000568,
       "pct": 0.35671819262783755,
-      "pe": 8.9,
+      "pe": 9.0,
       "dividend_yield": 4.74
     },
     {
@@ -153,7 +153,7 @@
       "price": 61.9,
       "change": -0.20000000000000284,
       "pct": -0.32206119162641356,
-      "pe": 13.6,
+      "pe": 13.9,
       "dividend_yield": 3.23
     },
     {
@@ -643,6 +643,11 @@
     },
     {
       "date": "2026-10-23",
+      "total_value": 228450.0,
+      "total_pl_pct": 8.708065667380442
+    },
+    {
+      "date": "2026-10-26",
       "total_value": 228450.0,
       "total_pl_pct": 8.708065667380442
     }
@@ -1165,6 +1170,14 @@
           "low": 189.5,
           "close": 190.0,
           "volume": 36028808
+        },
+        {
+          "date": "2026-10-23",
+          "open": 190.0,
+          "high": 190.0,
+          "low": 190.0,
+          "close": 190.0,
+          "volume": 0
         }
       ],
       "dividends": [
@@ -1719,6 +1732,14 @@
           "low": 2385.0,
           "close": 2385.0,
           "volume": 22930116
+        },
+        {
+          "date": "2026-10-23",
+          "open": 2385.0,
+          "high": 2385.0,
+          "low": 2385.0,
+          "close": 2385.0,
+          "volume": 0
         }
       ],
       "dividends": [
@@ -2273,6 +2294,14 @@
           "low": 66.4,
           "close": 66.4,
           "volume": 112561578
+        },
+        {
+          "date": "2026-10-23",
+          "open": 66.4,
+          "high": 66.4,
+          "low": 66.4,
+          "close": 66.4,
+          "volume": 0
         }
       ],
       "dividends": [
@@ -2819,6 +2848,14 @@
           "low": 154.0,
           "close": 154.5,
           "volume": 43016456
+        },
+        {
+          "date": "2026-10-23",
+          "open": 154.5,
+          "high": 154.5,
+          "low": 154.5,
+          "close": 154.5,
+          "volume": 0
         }
       ],
       "dividends": [
@@ -3373,6 +3410,14 @@
           "low": 125.0,
           "close": 125.5,
           "volume": 86647542
+        },
+        {
+          "date": "2026-10-23",
+          "open": 125.5,
+          "high": 125.5,
+          "low": 125.5,
+          "close": 125.5,
+          "volume": 0
         }
       ],
       "dividends": [
@@ -3927,6 +3972,14 @@
           "low": 256.0,
           "close": 260.0,
           "volume": 8429712
+        },
+        {
+          "date": "2026-10-23",
+          "open": 260.0,
+          "high": 260.0,
+          "low": 260.0,
+          "close": 260.0,
+          "volume": 0
         }
       ],
       "dividends": [
@@ -3968,9 +4021,9 @@
       "fundamentals": {
         "long_name": "Yang Ming Marine Transport Corporation",
         "industry": "Marine Shipping",
-        "pe": 13.6,
+        "pe": 13.9,
         "dividend_yield": 3.23,
-        "eps": 4.54,
+        "eps": 4.44,
         "revenue": 163968172032,
         "gross_margin": 12.01,
         "profit_margin": 9.46,
@@ -4481,6 +4534,14 @@
           "low": 61.9,
           "close": 61.9,
           "volume": 11850690
+        },
+        {
+          "date": "2026-10-23",
+          "open": 61.9,
+          "high": 61.9,
+          "low": 61.9,
+          "close": 61.9,
+          "volume": 0
         }
       ],
       "dividends": [
@@ -4522,9 +4583,9 @@
       "fundamentals": {
         "long_name": "Wan Hai Lines Ltd.",
         "industry": "Marine Shipping",
-        "pe": 8.0,
+        "pe": 8.2,
         "dividend_yield": 2.51,
-        "eps": 14.92,
+        "eps": 14.55,
         "revenue": 144951918592,
         "gross_margin": 27.19,
         "profit_margin": 28.19,
@@ -5035,6 +5096,14 @@
           "low": 117.0,
           "close": 119.5,
           "volume": 11305548
+        },
+        {
+          "date": "2026-10-23",
+          "open": 119.5,
+          "high": 119.5,
+          "low": 119.5,
+          "close": 119.5,
+          "volume": 0
         }
       ],
       "dividends": [
@@ -5076,9 +5145,9 @@
       "fundamentals": {
         "long_name": "EVA Airways Corp.",
         "industry": "Airlines",
-        "pe": 8.9,
+        "pe": 9.0,
         "dividend_yield": 4.74,
-        "eps": 4.73,
+        "eps": 4.71,
         "revenue": 238367539200,
         "gross_margin": 21.19,
         "profit_margin": 10.76,
@@ -5589,6 +5658,14 @@
           "low": 41.8,
           "close": 42.2,
           "volume": 12576027
+        },
+        {
+          "date": "2026-10-23",
+          "open": 42.2,
+          "high": 42.2,
+          "low": 42.2,
+          "close": 42.2,
+          "volume": 0
         }
       ],
       "dividends": [
@@ -6143,6 +6220,14 @@
           "low": 20.3,
           "close": 20.5,
           "volume": 13446952
+        },
+        {
+          "date": "2026-10-23",
+          "open": 20.5,
+          "high": 20.5,
+          "low": 20.5,
+          "close": 20.5,
+          "volume": 0
         }
       ],
       "dividends": [
@@ -6697,6 +6782,14 @@
           "low": 41.0,
           "close": 42.35,
           "volume": 20164191
+        },
+        {
+          "date": "2026-10-23",
+          "open": 42.35,
+          "high": 42.35,
+          "low": 42.35,
+          "close": 42.35,
+          "volume": 0
         }
       ],
       "dividends": [
@@ -7251,6 +7344,14 @@
           "low": 52.7,
           "close": 55.2,
           "volume": 21659801
+        },
+        {
+          "date": "2026-10-23",
+          "open": 55.2,
+          "high": 55.2,
+          "low": 55.2,
+          "close": 55.2,
+          "volume": 0
         }
       ],
       "dividends": [
@@ -7805,6 +7906,14 @@
           "low": 113.0,
           "close": 113.5,
           "volume": 16361848
+        },
+        {
+          "date": "2026-10-23",
+          "open": 113.5,
+          "high": 113.5,
+          "low": 113.5,
+          "close": 113.5,
+          "volume": 0
         }
       ],
       "dividends": [
@@ -7846,9 +7955,9 @@
       "fundamentals": {
         "long_name": "Chang Hwa Commercial Bank, Ltd.",
         "industry": "Banks - Regional",
-        "pe": 19.4,
+        "pe": 19.7,
         "dividend_yield": 2.68,
-        "eps": 1.54,
+        "eps": 1.52,
         "revenue": 45393547264,
         "gross_margin": 0.0,
         "profit_margin": 43.97,
@@ -8359,6 +8468,14 @@
           "low": 29.25,
           "close": 29.9,
           "volume": 19226596
+        },
+        {
+          "date": "2026-10-23",
+          "open": 29.9,
+          "high": 29.9,
+          "low": 29.9,
+          "close": 29.9,
+          "volume": 0
         }
       ],
       "dividends": [
@@ -8913,6 +9030,14 @@
           "low": 73.9,
           "close": 74.9,
           "volume": 32070837
+        },
+        {
+          "date": "2026-10-23",
+          "open": 74.9,
+          "high": 74.9,
+          "low": 74.9,
+          "close": 74.9,
+          "volume": 0
         }
       ],
       "dividends": [
@@ -9467,6 +9592,14 @@
           "low": 14.4,
           "close": 14.4,
           "volume": 18421345
+        },
+        {
+          "date": "2026-10-23",
+          "open": 14.4,
+          "high": 14.4,
+          "low": 14.4,
+          "close": 14.4,
+          "volume": 0
         }
       ],
       "dividends": [
@@ -10017,6 +10150,14 @@
           "low": 35.3,
           "close": 35.4,
           "volume": 291453859
+        },
+        {
+          "date": "2026-10-23",
+          "open": 35.4,
+          "high": 35.4,
+          "low": 35.4,
+          "close": 35.4,
+          "volume": 0
         }
       ],
       "dividends": [
@@ -10571,6 +10712,14 @@
           "low": 46.75,
           "close": 46.75,
           "volume": 122247681
+        },
+        {
+          "date": "2026-10-23",
+          "open": 46.75,
+          "high": 46.75,
+          "low": 46.75,
+          "close": 46.75,
+          "volume": 0
         }
       ],
       "dividends": [
@@ -11125,6 +11274,14 @@
           "low": 37.1,
           "close": 37.3,
           "volume": 31416144
+        },
+        {
+          "date": "2026-10-23",
+          "open": 37.3,
+          "high": 37.3,
+          "low": 37.3,
+          "close": 37.3,
+          "volume": 0
         }
       ],
       "dividends": [
@@ -11679,6 +11836,14 @@
           "low": 60.1,
           "close": 60.5,
           "volume": 11918001
+        },
+        {
+          "date": "2026-10-23",
+          "open": 60.5,
+          "high": 60.5,
+          "low": 60.5,
+          "close": 60.5,
+          "volume": 0
         }
       ],
       "dividends": [
@@ -12233,6 +12398,14 @@
           "low": 254.5,
           "close": 255.5,
           "volume": 7021752
+        },
+        {
+          "date": "2026-10-23",
+          "open": 255.5,
+          "high": 255.5,
+          "low": 255.5,
+          "close": 255.5,
+          "volume": 0
         }
       ],
       "dividends": [
@@ -12787,6 +12960,14 @@
           "low": 506.0,
           "close": 507.0,
           "volume": 42559766
+        },
+        {
+          "date": "2026-10-23",
+          "open": 507.0,
+          "high": 507.0,
+          "low": 507.0,
+          "close": 507.0,
+          "volume": 0
         }
       ],
       "dividends": [
@@ -13341,6 +13522,14 @@
           "low": 53.5,
           "close": 53.6,
           "volume": 29021923
+        },
+        {
+          "date": "2026-10-23",
+          "open": 53.6,
+          "high": 53.6,
+          "low": 53.6,
+          "close": 53.6,
+          "volume": 0
         }
       ],
       "dividends": [
@@ -13895,6 +14084,14 @@
           "low": 244.5,
           "close": 245.0,
           "volume": 25993324
+        },
+        {
+          "date": "2026-10-23",
+          "open": 245.0,
+          "high": 245.0,
+          "low": 245.0,
+          "close": 245.0,
+          "volume": 0
         }
       ],
       "dividends": [
@@ -14449,6 +14646,14 @@
           "low": 27.05,
           "close": 27.95,
           "volume": 102966050
+        },
+        {
+          "date": "2026-10-23",
+          "open": 27.95,
+          "high": 27.95,
+          "low": 27.95,
+          "close": 27.95,
+          "volume": 0
         }
       ],
       "dividends": [
@@ -15003,6 +15208,14 @@
           "low": 28.0,
           "close": 28.1,
           "volume": 1975201
+        },
+        {
+          "date": "2026-10-23",
+          "open": 28.1,
+          "high": 28.1,
+          "low": 28.1,
+          "close": 28.1,
+          "volume": 0
         }
       ],
       "dividends": [
@@ -15557,6 +15770,14 @@
           "low": 11.1,
           "close": 11.2,
           "volume": 22738497
+        },
+        {
+          "date": "2026-10-23",
+          "open": 11.2,
+          "high": 11.2,
+          "low": 11.2,
+          "close": 11.2,
+          "volume": 0
         }
       ],
       "dividends": [
@@ -16103,6 +16324,14 @@
           "low": 77.6,
           "close": 79.6,
           "volume": 9999747
+        },
+        {
+          "date": "2026-10-23",
+          "open": 79.6,
+          "high": 79.6,
+          "low": 79.6,
+          "close": 79.6,
+          "volume": 0
         }
       ],
       "dividends": [
@@ -16657,6 +16886,14 @@
           "low": 142.55,
           "close": 142.55,
           "volume": 657598
+        },
+        {
+          "date": "2026-10-23",
+          "open": 142.55,
+          "high": 142.55,
+          "low": 142.55,
+          "close": 142.55,
+          "volume": 0
         }
       ],
       "dividends": []
