@@ -1,310 +1,310 @@
 {
-  "generated_at": "2026-11-06 22:09:43",
-  "data_date": "2026-11-06",
+  "generated_at": "2026-11-10 00:02:18",
+  "data_date": "2026-11-10",
   "holdings": [
     {
       "code": "3231",
       "name": "緯創",
       "shares": 400,
       "cost": 146.5,
-      "price": 160.0,
-      "change": -8.5,
-      "pct": -5.044510385756676,
-      "market_value": 64000.0,
-      "pl": 5400.0,
-      "pl_pct": 9.215017064846416,
-      "pe": 13.8,
-      "dividend_yield": 3.26
+      "price": 168.5,
+      "change": 8.5,
+      "pct": 5.3125,
+      "market_value": 67400.0,
+      "pl": 8800.0,
+      "pl_pct": 15.017064846416384,
+      "pe": 14.5,
+      "dividend_yield": 3.44
     },
     {
       "code": "2330",
       "name": "台積電",
       "shares": 50,
       "cost": 2415.0,
-      "price": 2135.0,
-      "change": -105.0,
-      "pct": -4.6875,
-      "market_value": 106750.0,
-      "pl": -14000.0,
-      "pl_pct": -11.594202898550725,
-      "pe": 21.9,
-      "dividend_yield": 1.25
+      "price": 2235.0,
+      "change": 100.0,
+      "pct": 4.683840749414521,
+      "market_value": 111750.0,
+      "pl": -9000.0,
+      "pl_pct": -7.453416149068323,
+      "pe": 22.9,
+      "dividend_yield": 1.31
     },
     {
       "code": "6770",
       "name": "力積電",
       "shares": 500,
       "cost": 61.6,
-      "price": 52.9,
-      "change": -1.8999999999999986,
-      "pct": -3.4671532846715305,
-      "market_value": 26450.0,
-      "pl": -4350.0,
-      "pl_pct": -14.123376623376624,
-      "pe": 16.4,
-      "dividend_yield": 42.0
+      "price": 58.1,
+      "change": 5.200000000000003,
+      "pct": 9.829867674858228,
+      "market_value": 29050.0,
+      "pl": -1750.0,
+      "pl_pct": -5.681818181818182,
+      "pe": 18.0,
+      "dividend_yield": 43.0
     }
   ],
   "watchlist": [
     {
-      "code": "6116",
-      "name": "彩晶",
+      "code": "2328",
+      "name": "廣宇",
+      "sector": "電子代工/零組件",
+      "price": 46.8,
+      "change": 4.25,
+      "pct": 9.988249118683902,
+      "pe": 108.8,
+      "dividend_yield": 2.12
+    },
+    {
+      "code": "3481",
+      "name": "群創",
       "sector": "面板",
-      "price": 12.15,
-      "change": 0.05000000000000071,
-      "pct": 0.41322314049587366,
-      "pe": null,
-      "dividend_yield": 0.0
+      "price": 39.65,
+      "change": 3.6000000000000014,
+      "pct": 9.986130374479893,
+      "pe": 50.8,
+      "dividend_yield": 2.77
     },
     {
-      "code": "2886",
-      "name": "兆豐金",
-      "sector": "金融",
-      "price": 53.5,
-      "change": -0.5,
-      "pct": -0.9259259259259258,
-      "pe": 22.7,
-      "dividend_yield": 3.24
+      "code": "2344",
+      "name": "華邦電",
+      "sector": "半導體",
+      "price": 132.5,
+      "change": 12.0,
+      "pct": 9.95850622406639,
+      "pe": 14.6,
+      "dividend_yield": 41.0
     },
     {
-      "code": "1101",
-      "name": "台泥",
-      "sector": "傳產",
-      "price": 26.75,
-      "change": -0.4499999999999993,
-      "pct": -1.65441176470588,
-      "pe": null,
-      "dividend_yield": 2.94
+      "code": "2327",
+      "name": "國巨",
+      "sector": "電子代工/零組件",
+      "price": 411.0,
+      "change": 37.0,
+      "pct": 9.893048128342247,
+      "pe": 27.7,
+      "dividend_yield": 1.6
     },
     {
-      "code": "2891",
-      "name": "中信金",
-      "sector": "金融",
-      "price": 73.4,
-      "change": -1.5,
-      "pct": -2.002670226969292,
-      "pe": 18.1,
-      "dividend_yield": 3.34
+      "code": "2301",
+      "name": "光寶科",
+      "sector": "電子代工/零組件",
+      "price": 217.5,
+      "change": 19.5,
+      "pct": 9.848484848484848,
+      "pe": 25.6,
+      "dividend_yield": 5.05
     },
     {
-      "code": "2610",
-      "name": "華航",
-      "sector": "航運",
-      "price": 21.2,
-      "change": -0.4499999999999993,
-      "pct": -2.0785219399538075,
-      "pe": 9.9,
-      "dividend_yield": 3.76
+      "code": "2317",
+      "name": "鴻海",
+      "sector": "電子代工/零組件",
+      "price": 239.0,
+      "change": 14.5,
+      "pct": 6.45879732739421,
+      "pe": 15.9,
+      "dividend_yield": 3.19
     },
     {
       "code": "2409",
       "name": "友達",
       "sector": "面板",
-      "price": 26.55,
-      "change": -0.6999999999999993,
-      "pct": -2.5688073394495388,
-      "pe": 110.6,
-      "dividend_yield": 1.47
+      "price": 28.2,
+      "change": 1.6499999999999986,
+      "pct": 6.214689265536718,
+      "pe": 117.5,
+      "dividend_yield": 1.51
     },
     {
-      "code": "2801",
-      "name": "彰銀",
+      "code": "2356",
+      "name": "英業達",
+      "sector": "電子代工/零組件",
+      "price": 55.6,
+      "change": 3.0,
+      "pct": 5.7034220532319395,
+      "pe": 18.1,
+      "dividend_yield": 3.8
+    },
+    {
+      "code": "2303",
+      "name": "聯電",
+      "sector": "半導體",
+      "price": 96.7,
+      "change": 4.700000000000003,
+      "pct": 5.108695652173916,
+      "pe": 14.4,
+      "dividend_yield": 2.83
+    },
+    {
+      "code": "2882",
+      "name": "國泰金",
       "sector": "金融",
-      "price": 27.9,
-      "change": -0.8000000000000007,
-      "pct": -2.7874564459930338,
-      "pe": 18.4,
-      "dividend_yield": 2.79
+      "price": 111.0,
+      "change": 5.0,
+      "pct": 4.716981132075472,
+      "pe": 16.5,
+      "dividend_yield": 3.3
+    },
+    {
+      "code": "6116",
+      "name": "彩晶",
+      "sector": "面板",
+      "price": 12.7,
+      "change": 0.5499999999999989,
+      "pct": 4.526748971193407,
+      "pe": null,
+      "dividend_yield": 0.0
+    },
+    {
+      "code": "1718",
+      "name": "中纖",
+      "sector": "傳產",
+      "price": 9.7,
+      "change": 0.41000000000000014,
+      "pct": 4.413347685683532,
+      "pe": 40.4,
+      "dividend_yield": 0.0
     },
     {
       "code": "2324",
       "name": "仁寶",
       "sector": "電子代工/零組件",
-      "price": 31.5,
-      "change": -0.9500000000000028,
-      "pct": -2.927580893682597,
-      "pe": 16.3,
-      "dividend_yield": 3.39
+      "price": 32.8,
+      "change": 1.2999999999999972,
+      "pct": 4.126984126984118,
+      "pe": 17.0,
+      "dividend_yield": 3.49
+    },
+    {
+      "code": "2891",
+      "name": "中信金",
+      "sector": "金融",
+      "price": 75.9,
+      "change": 2.5,
+      "pct": 3.405994550408719,
+      "pe": 18.7,
+      "dividend_yield": 3.41
+    },
+    {
+      "code": "2610",
+      "name": "華航",
+      "sector": "航運",
+      "price": 21.75,
+      "change": 0.5500000000000007,
+      "pct": 2.594339622641513,
+      "pe": 10.1,
+      "dividend_yield": 3.84
+    },
+    {
+      "code": "2801",
+      "name": "彰銀",
+      "sector": "金融",
+      "price": 28.15,
+      "change": 0.25,
+      "pct": 0.896057347670251,
+      "pe": 18.5,
+      "dividend_yield": 2.87
+    },
+    {
+      "code": "2609",
+      "name": "陽明",
+      "sector": "航運",
+      "price": 57.5,
+      "change": 0.3999999999999986,
+      "pct": 0.7005253940455316,
+      "pe": 13.0,
+      "dividend_yield": 3.5
+    },
+    {
+      "code": "2618",
+      "name": "長榮航",
+      "sector": "航運",
+      "price": 43.9,
+      "change": 0.29999999999999716,
+      "pct": 0.6880733944954063,
+      "pe": 9.3,
+      "dividend_yield": 4.59
+    },
+    {
+      "code": "1101",
+      "name": "台泥",
+      "sector": "傳產",
+      "price": 26.8,
+      "change": 0.05000000000000071,
+      "pct": 0.18691588785046995,
+      "pe": null,
+      "dividend_yield": 2.99
+    },
+    {
+      "code": "00757",
+      "name": "統一FANG+",
+      "sector": "ETF",
+      "price": 130.25,
+      "change": 0.09999999999999432,
+      "pct": 0.07683442182097143,
+      "pe": 23.0,
+      "dividend_yield": 0.0
     },
     {
       "code": "2892",
       "name": "第一金",
       "sector": "金融",
       "price": 40.95,
-      "change": -1.2999999999999972,
-      "pct": -3.07692307692307,
+      "change": 0.0,
+      "pct": 0.0,
       "pe": 21.9,
-      "dividend_yield": 3.08
-    },
-    {
-      "code": "2618",
-      "name": "長榮航",
-      "sector": "航運",
-      "price": 43.6,
-      "change": -1.5,
-      "pct": -3.325942350332594,
-      "pe": 9.3,
-      "dividend_yield": 4.43
-    },
-    {
-      "code": "2356",
-      "name": "英業達",
-      "sector": "電子代工/零組件",
-      "price": 52.6,
-      "change": -2.3999999999999986,
-      "pct": -4.3636363636363615,
-      "pe": 17.1,
-      "dividend_yield": 3.64
-    },
-    {
-      "code": "00757",
-      "name": "統一FANG+",
-      "sector": "ETF",
-      "price": 130.15,
-      "change": -6.049999999999983,
-      "pct": -4.441997063142425,
-      "pe": 23.0,
-      "dividend_yield": 0.0
-    },
-    {
-      "code": "2317",
-      "name": "鴻海",
-      "sector": "電子代工/零組件",
-      "price": 224.5,
-      "change": -10.5,
-      "pct": -4.468085106382979,
-      "pe": 14.9,
-      "dividend_yield": 3.05
-    },
-    {
-      "code": "2603",
-      "name": "長榮",
-      "sector": "航運",
-      "price": 246.5,
-      "change": -12.5,
-      "pct": -4.826254826254826,
-      "pe": 9.8,
-      "dividend_yield": 6.18
-    },
-    {
-      "code": "2609",
-      "name": "陽明",
-      "sector": "航運",
-      "price": 57.1,
-      "change": -2.8999999999999986,
-      "pct": -4.833333333333331,
-      "pe": 12.9,
-      "dividend_yield": 3.33
-    },
-    {
-      "code": "2615",
-      "name": "萬海",
-      "sector": "航運",
-      "price": 107.5,
-      "change": -5.5,
-      "pct": -4.867256637168142,
-      "pe": 7.4,
-      "dividend_yield": 2.65
-    },
-    {
-      "code": "1718",
-      "name": "中纖",
-      "sector": "傳產",
-      "price": 9.29,
-      "change": -0.4900000000000002,
-      "pct": -5.010224948875258,
-      "pe": 38.7,
-      "dividend_yield": 0.0
+      "dividend_yield": 3.17
     },
     {
       "code": "1216",
       "name": "統一",
       "sector": "民生消費",
-      "price": 76.8,
-      "change": -4.1000000000000085,
-      "pct": -5.067985166872693,
+      "price": 76.7,
+      "change": -0.09999999999999432,
+      "pct": -0.13020833333332593,
       "pe": 18.6,
-      "dividend_yield": 3.71
+      "dividend_yield": 3.91
     },
     {
-      "code": "3481",
-      "name": "群創",
-      "sector": "面板",
-      "price": 36.05,
-      "change": -1.9500000000000028,
-      "pct": -5.131578947368428,
-      "pe": 46.2,
-      "dividend_yield": 2.63
+      "code": "2603",
+      "name": "長榮",
+      "sector": "航運",
+      "price": 245.5,
+      "change": -1.0,
+      "pct": -0.4056795131845842,
+      "pe": 9.7,
+      "dividend_yield": 6.49
     },
     {
-      "code": "2882",
-      "name": "國泰金",
-      "sector": "金融",
-      "price": 106.0,
-      "change": -6.0,
-      "pct": -5.357142857142857,
-      "pe": 15.8,
-      "dividend_yield": 3.13
-    },
-    {
-      "code": "2344",
-      "name": "華邦電",
-      "sector": "半導體",
-      "price": 120.5,
-      "change": -7.0,
-      "pct": -5.490196078431373,
-      "pe": 13.3,
-      "dividend_yield": 39.0
-    },
-    {
-      "code": "2301",
-      "name": "光寶科",
-      "sector": "電子代工/零組件",
-      "price": 198.0,
-      "change": -13.5,
-      "pct": -6.382978723404255,
-      "pe": 23.3,
-      "dividend_yield": 4.73
-    },
-    {
-      "code": "2303",
-      "name": "聯電",
-      "sector": "半導體",
-      "price": 92.0,
-      "change": -6.400000000000006,
-      "pct": -6.504065040650412,
-      "pe": 13.7,
-      "dividend_yield": 2.65
-    },
-    {
-      "code": "2327",
-      "name": "國巨",
-      "sector": "電子代工/零組件",
-      "price": 374.0,
-      "change": -30.5,
-      "pct": -7.5401730531520395,
-      "pe": 25.2,
-      "dividend_yield": 1.48
-    },
-    {
-      "code": "2328",
-      "name": "廣宇",
-      "sector": "電子代工/零組件",
-      "price": 42.55,
-      "change": -4.700000000000003,
-      "pct": -9.947089947089953,
-      "pe": 99.0,
-      "dividend_yield": 1.9
+      "code": "2615",
+      "name": "萬海",
+      "sector": "航運",
+      "price": 107.0,
+      "change": -0.5,
+      "pct": -0.46511627906976744,
+      "pe": 7.4,
+      "dividend_yield": 2.79
     },
     {
       "code": "2103",
       "name": "台橡",
       "sector": "傳產",
-      "price": 23.05,
-      "change": -2.5500000000000007,
-      "pct": -9.960937500000004,
-      "pe": 9.3,
-      "dividend_yield": 1.05
+      "price": 22.8,
+      "change": -0.25,
+      "pct": -1.0845986984815619,
+      "pe": 9.2,
+      "dividend_yield": 1.17
+    },
+    {
+      "code": "2886",
+      "name": "兆豐金",
+      "sector": "金融",
+      "price": 52.8,
+      "change": -0.7000000000000028,
+      "pct": -1.3084112149532763,
+      "pe": 22.4,
+      "dividend_yield": 3.27
     }
   ],
   "indices": [
@@ -312,17 +312,17 @@
       "code": "^TWII",
       "name": "加權指數",
       "mis_code": "tse_t00.tw",
-      "price": 39690.74,
-      "change": -1883.9800000000032,
-      "pct": -4.531551866134043
+      "price": 41661.7,
+      "change": 1960.0599999999977,
+      "pct": 4.936974895747373
     },
     {
       "code": "^TWOII",
       "name": "櫃檯指數(OTC)",
       "mis_code": "otc_o00.tw",
-      "price": 303.78,
-      "change": -17.690000000000055,
-      "pct": -5.502846299810263
+      "price": 321.97,
+      "change": 17.950000000000045,
+      "pct": 5.904216827840289
     }
   ],
   "history": [
@@ -695,6 +695,11 @@
       "date": "2026-11-06",
       "total_value": 197200.0,
       "total_pl_pct": -6.162265048774685
+    },
+    {
+      "date": "2026-11-10",
+      "total_value": 208200.0,
+      "total_pl_pct": -0.9279086366880799
     }
   ],
   "details": {
@@ -702,32 +707,16 @@
       "fundamentals": {
         "long_name": "Wistron Corporation",
         "industry": "Computer Hardware",
-        "pe": 13.8,
-        "dividend_yield": 3.26,
+        "pe": 14.5,
+        "dividend_yield": 3.44,
         "eps": 11.63,
         "revenue": 3030491856896,
         "gross_margin": 5.85,
         "profit_margin": 1.32,
         "roe": 30.94,
-        "market_cap": 548774739968
+        "market_cap": 577928429568
       },
       "price_history": [
-        {
-          "date": "2026-08-06",
-          "open": 193.5,
-          "high": 199.0,
-          "low": 188.0,
-          "close": 189.5,
-          "volume": 82406363
-        },
-        {
-          "date": "2026-08-07",
-          "open": 188.0,
-          "high": 188.0,
-          "low": 180.5,
-          "close": 183.5,
-          "volume": 64544291
-        },
         {
           "date": "2026-08-10",
           "open": 185.5,
@@ -1214,7 +1203,15 @@
           "high": 163.0,
           "low": 152.0,
           "close": 160.0,
-          "volume": 48148354
+          "volume": 47486516
+        },
+        {
+          "date": "2026-11-09",
+          "open": NaN,
+          "high": NaN,
+          "low": NaN,
+          "close": NaN,
+          "volume": 39866102
         }
       ],
       "dividends": [
@@ -1256,32 +1253,16 @@
       "fundamentals": {
         "long_name": "Taiwan Semiconductor Manufacturing Company Limited",
         "industry": "Semiconductors",
-        "pe": 21.9,
-        "dividend_yield": 1.25,
+        "pe": 22.9,
+        "dividend_yield": 1.31,
         "eps": 97.47,
         "revenue": 4944817029120,
         "gross_margin": 65.85,
         "profit_margin": 51.12,
         "roe": 41.85,
-        "market_cap": 55365609717760
+        "market_cap": 57958847217664
       },
       "price_history": [
-        {
-          "date": "2026-08-06",
-          "open": 2387.97,
-          "high": 2387.97,
-          "low": 2353.07,
-          "close": 2358.06,
-          "volume": 22943128
-        },
-        {
-          "date": "2026-08-07",
-          "open": 2382.99,
-          "high": 2387.97,
-          "low": 2348.09,
-          "close": 2363.04,
-          "volume": 21959343
-        },
         {
           "date": "2026-08-10",
           "open": 2382.99,
@@ -1768,7 +1749,15 @@
           "high": 2195.0,
           "low": 2020.0,
           "close": 2135.0,
-          "volume": 108673336
+          "volume": 97176862
+        },
+        {
+          "date": "2026-11-09",
+          "open": NaN,
+          "high": NaN,
+          "low": NaN,
+          "close": NaN,
+          "volume": 44725218
         }
       ],
       "dividends": [
@@ -1810,32 +1799,16 @@
       "fundamentals": {
         "long_name": "Powerchip Semiconductor Manufacturing Corporation",
         "industry": "Semiconductors",
-        "pe": 16.4,
-        "dividend_yield": 42.0,
+        "pe": 18.0,
+        "dividend_yield": 43.0,
         "eps": 3.22,
         "revenue": 55198314496,
         "gross_margin": 11.41,
         "profit_margin": 25.62,
         "roe": 13.25,
-        "market_cap": 251805990912
+        "market_cap": 276964048896
       },
       "price_history": [
-        {
-          "date": "2026-08-06",
-          "open": 66.18,
-          "high": 68.28,
-          "low": 64.79,
-          "close": 66.38,
-          "volume": 442759848
-        },
-        {
-          "date": "2026-08-07",
-          "open": 67.28,
-          "high": 68.18,
-          "low": 64.79,
-          "close": 65.29,
-          "volume": 217339590
-        },
         {
           "date": "2026-08-10",
           "open": 66.38,
@@ -2322,7 +2295,15 @@
           "high": 54.3,
           "low": 49.35,
           "close": 52.9,
-          "volume": 149528645
+          "volume": 148642940
+        },
+        {
+          "date": "2026-11-09",
+          "open": NaN,
+          "high": NaN,
+          "low": NaN,
+          "close": NaN,
+          "volume": 49855395
         }
       ],
       "dividends": [
@@ -2356,32 +2337,16 @@
       "fundamentals": {
         "long_name": "Winbond Electronics Corporation",
         "industry": "Semiconductors",
-        "pe": 13.3,
-        "dividend_yield": 39.0,
+        "pe": 14.6,
+        "dividend_yield": 41.0,
         "eps": 9.05,
         "revenue": 207052210176,
         "gross_margin": 62.45,
         "profit_margin": 35.39,
         "roe": 44.38,
-        "market_cap": 542250041344
+        "market_cap": 596250001408
       },
       "price_history": [
-        {
-          "date": "2026-08-06",
-          "open": 165.5,
-          "high": 173.0,
-          "low": 162.0,
-          "close": 171.0,
-          "volume": 183981432
-        },
-        {
-          "date": "2026-08-07",
-          "open": 170.0,
-          "high": 170.5,
-          "low": 160.5,
-          "close": 163.5,
-          "volume": 174570426
-        },
         {
           "date": "2026-08-10",
           "open": 169.0,
@@ -2868,7 +2833,15 @@
           "high": 123.5,
           "low": 115.0,
           "close": 120.5,
-          "volume": 84102867
+          "volume": 82903962
+        },
+        {
+          "date": "2026-11-09",
+          "open": NaN,
+          "high": NaN,
+          "low": NaN,
+          "close": NaN,
+          "volume": 37781754
         }
       ],
       "dividends": [
@@ -2910,32 +2883,16 @@
       "fundamentals": {
         "long_name": "United Microelectronics Corporation",
         "industry": "Semiconductors",
-        "pe": 13.7,
-        "dividend_yield": 2.65,
+        "pe": 14.4,
+        "dividend_yield": 2.83,
         "eps": 6.7,
         "revenue": 265819226112,
         "gross_margin": 31.71,
         "profit_margin": 31.95,
         "roe": 20.37,
-        "market_cap": 1153585119232
+        "market_cap": 1212518236160
       },
       "price_history": [
-        {
-          "date": "2026-08-06",
-          "open": 121.5,
-          "high": 123.5,
-          "low": 118.0,
-          "close": 121.5,
-          "volume": 147342605
-        },
-        {
-          "date": "2026-08-07",
-          "open": 121.5,
-          "high": 121.5,
-          "low": 114.0,
-          "close": 116.0,
-          "volume": 165309350
-        },
         {
           "date": "2026-08-10",
           "open": 117.0,
@@ -3422,7 +3379,15 @@
           "high": 94.6,
           "low": 88.6,
           "close": 92.0,
-          "volume": 204631511
+          "volume": 201520078
+        },
+        {
+          "date": "2026-11-09",
+          "open": NaN,
+          "high": NaN,
+          "low": NaN,
+          "close": NaN,
+          "volume": 209362151
         }
       ],
       "dividends": [
@@ -3464,32 +3429,16 @@
       "fundamentals": {
         "long_name": "Evergreen Marine Corporation (Taiwan) Ltd.",
         "industry": "Marine Shipping",
-        "pe": 9.8,
-        "dividend_yield": 6.18,
+        "pe": 9.7,
+        "dividend_yield": 6.49,
         "eps": 25.2,
         "revenue": 374286516224,
         "gross_margin": 20.85,
         "profit_margin": 14.59,
         "roe": 10.17,
-        "market_cap": 533683077120
+        "market_cap": 531518029824
       },
       "price_history": [
-        {
-          "date": "2026-08-06",
-          "open": 204.0,
-          "high": 205.5,
-          "low": 202.0,
-          "close": 204.0,
-          "volume": 3689452
-        },
-        {
-          "date": "2026-08-07",
-          "open": 205.5,
-          "high": 207.5,
-          "low": 204.0,
-          "close": 207.5,
-          "volume": 5857297
-        },
         {
           "date": "2026-08-10",
           "open": 208.5,
@@ -3976,7 +3925,15 @@
           "high": 249.0,
           "low": 236.5,
           "close": 246.5,
-          "volume": 17255546
+          "volume": 17023768
+        },
+        {
+          "date": "2026-11-09",
+          "open": NaN,
+          "high": NaN,
+          "low": NaN,
+          "close": NaN,
+          "volume": 10186147
         }
       ],
       "dividends": [
@@ -4018,32 +3975,16 @@
       "fundamentals": {
         "long_name": "Yang Ming Marine Transport Corporation",
         "industry": "Marine Shipping",
-        "pe": 12.9,
-        "dividend_yield": 3.33,
+        "pe": 13.0,
+        "dividend_yield": 3.5,
         "eps": 4.44,
         "revenue": 163968172032,
         "gross_margin": 12.01,
         "profit_margin": 9.46,
         "roe": 4.95,
-        "market_cap": 199399145472
+        "market_cap": 200795996160
       },
       "price_history": [
-        {
-          "date": "2026-08-06",
-          "open": 50.4,
-          "high": 50.6,
-          "low": 50.0,
-          "close": 50.4,
-          "volume": 8391505
-        },
-        {
-          "date": "2026-08-07",
-          "open": 50.8,
-          "high": 50.8,
-          "low": 50.0,
-          "close": 50.5,
-          "volume": 9797275
-        },
         {
           "date": "2026-08-10",
           "open": 50.8,
@@ -4530,7 +4471,15 @@
           "high": 57.7,
           "low": 54.9,
           "close": 57.1,
-          "volume": 23988452
+          "volume": 23873550
+        },
+        {
+          "date": "2026-11-09",
+          "open": NaN,
+          "high": NaN,
+          "low": NaN,
+          "close": NaN,
+          "volume": 16596071
         }
       ],
       "dividends": [
@@ -4573,31 +4522,15 @@
         "long_name": "Wan Hai Lines Ltd.",
         "industry": "Marine Shipping",
         "pe": 7.4,
-        "dividend_yield": 2.65,
+        "dividend_yield": 2.79,
         "eps": 14.55,
         "revenue": 144951918592,
         "gross_margin": 27.19,
         "profit_margin": 28.19,
         "roe": 15.49,
-        "market_cap": 301660733440
+        "market_cap": 300257640448
       },
       "price_history": [
-        {
-          "date": "2026-08-06",
-          "open": 85.1,
-          "high": 85.6,
-          "low": 84.0,
-          "close": 84.3,
-          "volume": 4862242
-        },
-        {
-          "date": "2026-08-07",
-          "open": 84.6,
-          "high": 85.2,
-          "low": 83.8,
-          "close": 84.9,
-          "volume": 3820606
-        },
         {
           "date": "2026-08-10",
           "open": 86.2,
@@ -5084,7 +5017,15 @@
           "high": 109.0,
           "low": 102.0,
           "close": 107.5,
-          "volume": 16961003
+          "volume": 16874491
+        },
+        {
+          "date": "2026-11-09",
+          "open": NaN,
+          "high": NaN,
+          "low": NaN,
+          "close": NaN,
+          "volume": 10443767
         }
       ],
       "dividends": [
@@ -5127,31 +5068,15 @@
         "long_name": "EVA Airways Corp.",
         "industry": "Airlines",
         "pe": 9.3,
-        "dividend_yield": 4.43,
+        "dividend_yield": 4.59,
         "eps": 4.71,
         "revenue": 238367539200,
         "gross_margin": 21.19,
         "profit_margin": 10.76,
         "roe": 19.36,
-        "market_cap": 235459362816
+        "market_cap": 237079511040
       },
       "price_history": [
-        {
-          "date": "2026-08-06",
-          "open": 43.7,
-          "high": 43.95,
-          "low": 43.1,
-          "close": 43.25,
-          "volume": 19925095
-        },
-        {
-          "date": "2026-08-07",
-          "open": 43.2,
-          "high": 44.6,
-          "low": 42.8,
-          "close": 44.4,
-          "volume": 37169067
-        },
         {
           "date": "2026-08-10",
           "open": 43.0,
@@ -5638,7 +5563,15 @@
           "high": 44.0,
           "low": 42.0,
           "close": 43.6,
-          "volume": 27926761
+          "volume": 27867067
+        },
+        {
+          "date": "2026-11-09",
+          "open": NaN,
+          "high": NaN,
+          "low": NaN,
+          "close": NaN,
+          "volume": 31097441
         }
       ],
       "dividends": [
@@ -5680,8 +5613,8 @@
       "fundamentals": {
         "long_name": "China Airlines, Ltd.",
         "industry": "Airlines",
-        "pe": 9.9,
-        "dividend_yield": 3.76,
+        "pe": 10.1,
+        "dividend_yield": 3.84,
         "eps": 2.15,
         "revenue": 225849737216,
         "gross_margin": 16.32,
@@ -5690,22 +5623,6 @@
         "market_cap": null
       },
       "price_history": [
-        {
-          "date": "2026-08-06",
-          "open": 22.6,
-          "high": 22.7,
-          "low": 22.1,
-          "close": 22.15,
-          "volume": 23657533
-        },
-        {
-          "date": "2026-08-07",
-          "open": 22.05,
-          "high": 22.55,
-          "low": 22.0,
-          "close": 22.5,
-          "volume": 30446983
-        },
         {
           "date": "2026-08-10",
           "open": 21.4,
@@ -6192,7 +6109,15 @@
           "high": 21.4,
           "low": 20.3,
           "close": 21.2,
-          "volume": 50906003
+          "volume": 50883554
+        },
+        {
+          "date": "2026-11-09",
+          "open": NaN,
+          "high": NaN,
+          "low": NaN,
+          "close": NaN,
+          "volume": 48908371
         }
       ],
       "dividends": [
@@ -6235,7 +6160,7 @@
         "long_name": "First Financial Holding Co., Ltd.",
         "industry": "Banks - Regional",
         "pe": 21.9,
-        "dividend_yield": 3.08,
+        "dividend_yield": 3.17,
         "eps": 1.87,
         "revenue": 78914101248,
         "gross_margin": 0.0,
@@ -6244,22 +6169,6 @@
         "market_cap": 588839190528
       },
       "price_history": [
-        {
-          "date": "2026-08-06",
-          "open": 34.47,
-          "high": 34.95,
-          "low": 34.18,
-          "close": 34.18,
-          "volume": 50623810
-        },
-        {
-          "date": "2026-08-07",
-          "open": 34.52,
-          "high": 34.52,
-          "low": 33.99,
-          "close": 34.23,
-          "volume": 32349253
-        },
         {
           "date": "2026-08-10",
           "open": 34.37,
@@ -6746,7 +6655,15 @@
           "high": 41.45,
           "low": 38.8,
           "close": 40.95,
-          "volume": 47553548
+          "volume": 47359338
+        },
+        {
+          "date": "2026-11-09",
+          "open": NaN,
+          "high": NaN,
+          "low": NaN,
+          "close": NaN,
+          "volume": 27948311
         }
       ],
       "dividends": [
@@ -6788,32 +6705,16 @@
       "fundamentals": {
         "long_name": "Mega Financial Holding Co., Ltd.",
         "industry": "Banks - Regional",
-        "pe": 22.7,
-        "dividend_yield": 3.24,
+        "pe": 22.4,
+        "dividend_yield": 3.27,
         "eps": 2.36,
         "revenue": 83821346816,
         "gross_margin": 0.0,
         "profit_margin": 45.54,
         "roe": 9.99,
-        "market_cap": 793585713152
+        "market_cap": 783202385920
       },
       "price_history": [
-        {
-          "date": "2026-08-06",
-          "open": 48.69,
-          "high": 50.04,
-          "low": 48.49,
-          "close": 48.49,
-          "volume": 31166691
-        },
-        {
-          "date": "2026-08-07",
-          "open": 49.36,
-          "high": 49.36,
-          "low": 48.59,
-          "close": 49.07,
-          "volume": 22497840
-        },
         {
           "date": "2026-08-10",
           "open": 50.04,
@@ -7300,7 +7201,15 @@
           "high": 54.3,
           "low": 50.4,
           "close": 53.5,
-          "volume": 35716260
+          "volume": 35533443
+        },
+        {
+          "date": "2026-11-09",
+          "open": NaN,
+          "high": NaN,
+          "low": NaN,
+          "close": NaN,
+          "volume": 39303309
         }
       ],
       "dividends": [
@@ -7342,32 +7251,16 @@
       "fundamentals": {
         "long_name": "Cathay Financial Holding Co., Ltd.",
         "industry": "Insurance - Life",
-        "pe": 15.8,
-        "dividend_yield": 3.13,
+        "pe": 16.5,
+        "dividend_yield": 3.3,
         "eps": 6.73,
         "revenue": 955103182848,
         "gross_margin": 29.59,
         "profit_margin": 25.53,
         "roe": 25.45,
-        "market_cap": 1554936233984
+        "market_cap": 1628282290176
       },
       "price_history": [
-        {
-          "date": "2026-08-06",
-          "open": 99.3,
-          "high": 100.5,
-          "low": 97.5,
-          "close": 97.5,
-          "volume": 16421578
-        },
-        {
-          "date": "2026-08-07",
-          "open": 99.4,
-          "high": 100.5,
-          "low": 98.5,
-          "close": 99.4,
-          "volume": 13809747
-        },
         {
           "date": "2026-08-10",
           "open": 100.0,
@@ -7854,7 +7747,15 @@
           "high": 109.0,
           "low": 101.0,
           "close": 106.0,
-          "volume": 48599612
+          "volume": 48291744
+        },
+        {
+          "date": "2026-11-09",
+          "open": NaN,
+          "high": NaN,
+          "low": NaN,
+          "close": NaN,
+          "volume": 29915199
         }
       ],
       "dividends": [
@@ -7896,32 +7797,16 @@
       "fundamentals": {
         "long_name": "Chang Hwa Commercial Bank, Ltd.",
         "industry": "Banks - Regional",
-        "pe": 18.4,
-        "dividend_yield": 2.79,
+        "pe": 18.5,
+        "dividend_yield": 2.87,
         "eps": 1.52,
         "revenue": 45393547264,
         "gross_margin": 0.0,
         "profit_margin": 43.97,
         "roe": 9.25,
-        "market_cap": 336479518720
+        "market_cap": 339494567936
       },
       "price_history": [
-        {
-          "date": "2026-08-06",
-          "open": 23.5,
-          "high": 23.75,
-          "low": 23.15,
-          "close": 23.15,
-          "volume": 36327348
-        },
-        {
-          "date": "2026-08-07",
-          "open": 23.2,
-          "high": 23.3,
-          "low": 23.0,
-          "close": 23.15,
-          "volume": 18074618
-        },
         {
           "date": "2026-08-10",
           "open": 23.2,
@@ -8408,7 +8293,15 @@
           "high": 28.35,
           "low": 26.4,
           "close": 27.9,
-          "volume": 39579762
+          "volume": 39307219
+        },
+        {
+          "date": "2026-11-09",
+          "open": NaN,
+          "high": NaN,
+          "low": NaN,
+          "close": NaN,
+          "volume": 22580326
         }
       ],
       "dividends": [
@@ -8450,32 +8343,16 @@
       "fundamentals": {
         "long_name": "CTBC Financial Holding Co., Ltd.",
         "industry": "Banks - Regional",
-        "pe": 18.1,
-        "dividend_yield": 3.34,
+        "pe": 18.7,
+        "dividend_yield": 3.41,
         "eps": 4.06,
         "revenue": 558138392576,
         "gross_margin": 67.84,
         "profit_margin": 19.71,
         "roe": 18.58,
-        "market_cap": 1444213424128
+        "market_cap": 1493403303936
       },
       "price_history": [
-        {
-          "date": "2026-08-06",
-          "open": 65.1,
-          "high": 66.4,
-          "low": 64.6,
-          "close": 64.6,
-          "volume": 27221781
-        },
-        {
-          "date": "2026-08-07",
-          "open": 65.7,
-          "high": 65.7,
-          "low": 64.7,
-          "close": 65.6,
-          "volume": 16118152
-        },
         {
           "date": "2026-08-10",
           "open": 65.8,
@@ -8962,7 +8839,15 @@
           "high": 74.4,
           "low": 67.5,
           "close": 73.4,
-          "volume": 58615876
+          "volume": 58254091
+        },
+        {
+          "date": "2026-11-09",
+          "open": NaN,
+          "high": NaN,
+          "low": NaN,
+          "close": NaN,
+          "volume": 56872338
         }
       ],
       "dividends": [
@@ -9011,25 +8896,9 @@
         "gross_margin": -10.3,
         "profit_margin": -4.74,
         "roe": -1.6,
-        "market_cap": 34732658688
+        "market_cap": 36304916480
       },
       "price_history": [
-        {
-          "date": "2026-08-06",
-          "open": 14.2,
-          "high": 14.3,
-          "low": 13.5,
-          "close": 14.0,
-          "volume": 52764467
-        },
-        {
-          "date": "2026-08-07",
-          "open": 14.05,
-          "high": 14.7,
-          "low": 13.55,
-          "close": 13.55,
-          "volume": 66030678
-        },
         {
           "date": "2026-08-10",
           "open": 14.0,
@@ -9516,7 +9385,15 @@
           "high": 12.2,
           "low": 10.9,
           "close": 12.15,
-          "volume": 43537822
+          "volume": 43464176
+        },
+        {
+          "date": "2026-11-09",
+          "open": NaN,
+          "high": NaN,
+          "low": NaN,
+          "close": NaN,
+          "volume": 24977745
         }
       ],
       "dividends": [
@@ -9554,32 +9431,16 @@
       "fundamentals": {
         "long_name": "AUO Corporation",
         "industry": "Electronic Components",
-        "pe": 110.6,
-        "dividend_yield": 1.47,
+        "pe": 117.5,
+        "dividend_yield": 1.51,
         "eps": 0.24,
         "revenue": 276939735040,
         "gross_margin": 11.46,
         "profit_margin": 0.21,
         "roe": 1.02,
-        "market_cap": 200375484416
+        "market_cap": 212828209152
       },
       "price_history": [
-        {
-          "date": "2026-08-06",
-          "open": 24.3,
-          "high": 24.65,
-          "low": 23.65,
-          "close": 24.55,
-          "volume": 144678700
-        },
-        {
-          "date": "2026-08-07",
-          "open": 24.55,
-          "high": 25.0,
-          "low": 24.1,
-          "close": 24.55,
-          "volume": 145347328
-        },
         {
           "date": "2026-08-10",
           "open": 25.6,
@@ -10066,7 +9927,15 @@
           "high": 27.2,
           "low": 24.55,
           "close": 26.55,
-          "volume": 280594249
+          "volume": 280283586
+        },
+        {
+          "date": "2026-11-09",
+          "open": NaN,
+          "high": NaN,
+          "low": NaN,
+          "close": NaN,
+          "volume": 215670521
         }
       ],
       "dividends": [
@@ -10108,32 +9977,16 @@
       "fundamentals": {
         "long_name": "Innolux Corporation",
         "industry": "Electronic Components",
-        "pe": 46.2,
-        "dividend_yield": 2.63,
+        "pe": 50.8,
+        "dividend_yield": 2.77,
         "eps": 0.78,
         "revenue": 244904787968,
         "gross_margin": 11.68,
         "profit_margin": 2.54,
         "roe": 3.03,
-        "market_cap": 287716966400
+        "market_cap": 316448768000
       },
       "price_history": [
-        {
-          "date": "2026-08-06",
-          "open": 47.9,
-          "high": 50.0,
-          "low": 46.7,
-          "close": 50.0,
-          "volume": 297686632
-        },
-        {
-          "date": "2026-08-07",
-          "open": 49.7,
-          "high": 50.4,
-          "low": 47.55,
-          "close": 47.55,
-          "volume": 269200835
-        },
         {
           "date": "2026-08-10",
           "open": 48.6,
@@ -10620,7 +10473,15 @@
           "high": 37.15,
           "low": 34.2,
           "close": 36.05,
-          "volume": 243206241
+          "volume": 242217692
+        },
+        {
+          "date": "2026-11-09",
+          "open": NaN,
+          "high": NaN,
+          "low": NaN,
+          "close": NaN,
+          "volume": 100071249
         }
       ],
       "dividends": [
@@ -10662,32 +10523,16 @@
       "fundamentals": {
         "long_name": "Compal Electronics, Inc.",
         "industry": "Computer Hardware",
-        "pe": 16.3,
-        "dividend_yield": 3.39,
+        "pe": 17.0,
+        "dividend_yield": 3.49,
         "eps": 1.93,
         "revenue": 817570119680,
         "gross_margin": 5.3,
         "profit_margin": 1.03,
         "roe": 7.16,
-        "market_cap": 134099574784
+        "market_cap": 139633836032
       },
       "price_history": [
-        {
-          "date": "2026-08-06",
-          "open": 36.8,
-          "high": 37.3,
-          "low": 36.5,
-          "close": 37.3,
-          "volume": 29447142
-        },
-        {
-          "date": "2026-08-07",
-          "open": 37.5,
-          "high": 37.5,
-          "low": 36.4,
-          "close": 36.55,
-          "volume": 30370859
-        },
         {
           "date": "2026-08-10",
           "open": 36.75,
@@ -11171,10 +11016,18 @@
         {
           "date": "2026-11-06",
           "open": 29.4,
-          "high": 31.7,
+          "high": 31.75,
           "low": 29.3,
           "close": 31.5,
-          "volume": 64905871
+          "volume": 64692933
+        },
+        {
+          "date": "2026-11-09",
+          "open": NaN,
+          "high": NaN,
+          "low": NaN,
+          "close": NaN,
+          "volume": 28453843
         }
       ],
       "dividends": [
@@ -11216,32 +11069,16 @@
       "fundamentals": {
         "long_name": "Inventec Corporation",
         "industry": "Computer Hardware",
-        "pe": 17.1,
-        "dividend_yield": 3.64,
+        "pe": 18.1,
+        "dividend_yield": 3.8,
         "eps": 3.08,
         "revenue": 817746214912,
         "gross_margin": 4.82,
         "profit_margin": 1.36,
         "roe": 16.57,
-        "market_cap": 188701179904
+        "market_cap": 199463600128
       },
       "price_history": [
-        {
-          "date": "2026-08-06",
-          "open": 65.2,
-          "high": 66.2,
-          "low": 64.4,
-          "close": 65.5,
-          "volume": 17879016
-        },
-        {
-          "date": "2026-08-07",
-          "open": 65.5,
-          "high": 65.6,
-          "low": 63.6,
-          "close": 64.0,
-          "volume": 13785063
-        },
         {
           "date": "2026-08-10",
           "open": 64.5,
@@ -11728,7 +11565,15 @@
           "high": 53.3,
           "low": 49.5,
           "close": 52.6,
-          "volume": 26541637
+          "volume": 26411544
+        },
+        {
+          "date": "2026-11-09",
+          "open": NaN,
+          "high": NaN,
+          "low": NaN,
+          "close": NaN,
+          "volume": 12452034
         }
       ],
       "dividends": [
@@ -11770,32 +11615,16 @@
       "fundamentals": {
         "long_name": "Lite-On Technology Corporation",
         "industry": "Computer Hardware",
-        "pe": 23.3,
-        "dividend_yield": 4.73,
+        "pe": 25.6,
+        "dividend_yield": 5.05,
         "eps": 8.5,
         "revenue": 197870174208,
         "gross_margin": 24.39,
         "profit_margin": 11.21,
         "roe": 24.39,
-        "market_cap": 449414856704
+        "market_cap": 493530021888
       },
       "price_history": [
-        {
-          "date": "2026-08-06",
-          "open": 251.18,
-          "high": 259.61,
-          "low": 246.72,
-          "close": 250.19,
-          "volume": 39740859
-        },
-        {
-          "date": "2026-08-07",
-          "open": 253.66,
-          "high": 265.55,
-          "low": 241.77,
-          "close": 244.74,
-          "volume": 32550357
-        },
         {
           "date": "2026-08-10",
           "open": 254.16,
@@ -12282,7 +12111,15 @@
           "high": 203.5,
           "low": 190.5,
           "close": 198.0,
-          "volume": 22690651
+          "volume": 22210676
+        },
+        {
+          "date": "2026-11-09",
+          "open": NaN,
+          "high": NaN,
+          "low": NaN,
+          "close": NaN,
+          "volume": 7999891
         }
       ],
       "dividends": [
@@ -12324,32 +12161,16 @@
       "fundamentals": {
         "long_name": "Yageo Corporation",
         "industry": "Electronic Components",
-        "pe": 25.2,
-        "dividend_yield": 1.48,
+        "pe": 27.7,
+        "dividend_yield": 1.6,
         "eps": 14.85,
         "revenue": 151676911616,
         "gross_margin": 37.61,
         "profit_margin": 20.13,
         "roe": 18.72,
-        "market_cap": 769864368128
+        "market_cap": 846027358208
       },
       "price_history": [
-        {
-          "date": "2026-08-06",
-          "open": 563.0,
-          "high": 578.0,
-          "low": 536.0,
-          "close": 570.0,
-          "volume": 51720458
-        },
-        {
-          "date": "2026-08-07",
-          "open": 560.0,
-          "high": 578.0,
-          "low": 531.0,
-          "close": 540.0,
-          "volume": 42221275
-        },
         {
           "date": "2026-08-10",
           "open": 558.0,
@@ -12836,7 +12657,15 @@
           "high": 382.0,
           "low": 364.5,
           "close": 374.0,
-          "volume": 56755351
+          "volume": 54201270
+        },
+        {
+          "date": "2026-11-09",
+          "open": NaN,
+          "high": NaN,
+          "low": NaN,
+          "close": NaN,
+          "volume": 17088202
         }
       ],
       "dividends": [
@@ -12878,32 +12707,16 @@
       "fundamentals": {
         "long_name": "Pan-International Industrial Corp.",
         "industry": "Electronic Components",
-        "pe": 99.0,
-        "dividend_yield": 1.9,
+        "pe": 108.8,
+        "dividend_yield": 2.12,
         "eps": 0.43,
         "revenue": 19957157888,
         "gross_margin": 10.52,
         "profit_margin": 1.12,
         "roe": 1.2,
-        "market_cap": 22055632896
+        "market_cap": 24258605056
       },
       "price_history": [
-        {
-          "date": "2026-08-06",
-          "open": 44.1,
-          "high": 45.45,
-          "low": 43.2,
-          "close": 45.1,
-          "volume": 3031901
-        },
-        {
-          "date": "2026-08-07",
-          "open": 45.25,
-          "high": 47.2,
-          "low": 44.85,
-          "close": 45.15,
-          "volume": 6100292
-        },
         {
           "date": "2026-08-10",
           "open": 45.45,
@@ -13387,10 +13200,18 @@
         {
           "date": "2026-11-06",
           "open": 42.55,
-          "high": 43.45,
+          "high": 44.0,
           "low": 42.55,
           "close": 42.55,
-          "volume": 7049568
+          "volume": 6975330
+        },
+        {
+          "date": "2026-11-09",
+          "open": NaN,
+          "high": NaN,
+          "low": NaN,
+          "close": NaN,
+          "volume": 6437291
         }
       ],
       "dividends": [
@@ -13432,32 +13253,16 @@
       "fundamentals": {
         "long_name": "Hon Hai Precision Industry Co., Ltd.",
         "industry": "Electronic Components",
-        "pe": 14.9,
-        "dividend_yield": 3.05,
+        "pe": 15.9,
+        "dividend_yield": 3.19,
         "eps": 15.05,
         "revenue": 9310748803072,
         "gross_margin": 6.12,
         "profit_margin": 2.29,
         "roe": 13.15,
-        "market_cap": 3159672225792
+        "market_cap": 3363748970496
       },
       "price_history": [
-        {
-          "date": "2026-08-06",
-          "open": 258.5,
-          "high": 265.0,
-          "low": 257.5,
-          "close": 264.5,
-          "volume": 79995760
-        },
-        {
-          "date": "2026-08-07",
-          "open": 265.5,
-          "high": 267.0,
-          "low": 258.0,
-          "close": 260.0,
-          "volume": 37720298
-        },
         {
           "date": "2026-08-10",
           "open": 262.5,
@@ -13944,7 +13749,15 @@
           "high": 227.5,
           "low": 212.5,
           "close": 224.5,
-          "volume": 88963460
+          "volume": 87159797
+        },
+        {
+          "date": "2026-11-09",
+          "open": NaN,
+          "high": NaN,
+          "low": NaN,
+          "close": NaN,
+          "volume": 48975596
         }
       ],
       "dividends": [
@@ -13987,31 +13800,15 @@
         "long_name": "TCC Group Holdings Co., Ltd.",
         "industry": "Building Materials",
         "pe": null,
-        "dividend_yield": 2.94,
+        "dividend_yield": 2.99,
         "eps": -1.3,
         "revenue": 150783410176,
         "gross_margin": 19.44,
         "profit_margin": -6.17,
         "roe": -3.05,
-        "market_cap": 205792624640
+        "market_cap": 200817262592
       },
       "price_history": [
-        {
-          "date": "2026-08-06",
-          "open": 23.95,
-          "high": 24.6,
-          "low": 23.95,
-          "close": 24.35,
-          "volume": 28163675
-        },
-        {
-          "date": "2026-08-07",
-          "open": 24.3,
-          "high": 24.75,
-          "low": 24.3,
-          "close": 24.35,
-          "volume": 18297117
-        },
         {
           "date": "2026-08-10",
           "open": 24.5,
@@ -14498,7 +14295,15 @@
           "high": 27.0,
           "low": 25.6,
           "close": 26.75,
-          "volume": 70450308
+          "volume": 70302658
+        },
+        {
+          "date": "2026-11-09",
+          "open": NaN,
+          "high": NaN,
+          "low": NaN,
+          "close": NaN,
+          "volume": 32152119
         }
       ],
       "dividends": [
@@ -14540,32 +14345,16 @@
       "fundamentals": {
         "long_name": "TSRC Corporation",
         "industry": "Specialty Chemicals",
-        "pe": 9.3,
-        "dividend_yield": 1.05,
+        "pe": 9.2,
+        "dividend_yield": 1.17,
         "eps": 2.47,
         "revenue": 39179755520,
         "gross_margin": 13.79,
         "profit_margin": 5.24,
         "roe": 10.7,
-        "market_cap": 19032612864
+        "market_cap": 18826186752
       },
       "price_history": [
-        {
-          "date": "2026-08-06",
-          "open": 22.15,
-          "high": 22.85,
-          "low": 22.05,
-          "close": 22.75,
-          "volume": 2515440
-        },
-        {
-          "date": "2026-08-07",
-          "open": 25.0,
-          "high": 25.0,
-          "low": 25.0,
-          "close": 25.0,
-          "volume": 4082226
-        },
         {
           "date": "2026-08-10",
           "open": 27.3,
@@ -15052,7 +14841,15 @@
           "high": 23.3,
           "low": 23.05,
           "close": 23.05,
-          "volume": 13237899
+          "volume": 13211500
+        },
+        {
+          "date": "2026-11-09",
+          "open": NaN,
+          "high": NaN,
+          "low": NaN,
+          "close": NaN,
+          "volume": 10530192
         }
       ],
       "dividends": [
@@ -15094,32 +14891,16 @@
       "fundamentals": {
         "long_name": "China Man-Made Fiber Corporation",
         "industry": "Banks - Regional",
-        "pe": 38.7,
+        "pe": 40.4,
         "dividend_yield": 0.0,
         "eps": 0.24,
         "revenue": 45631430656,
         "gross_margin": 78.55,
         "profit_margin": 1.72,
         "roe": 9.23,
-        "market_cap": 12316409856
+        "market_cap": 12859975680
       },
       "price_history": [
-        {
-          "date": "2026-08-06",
-          "open": 10.0,
-          "high": 10.95,
-          "low": 10.0,
-          "close": 10.2,
-          "volume": 71096262
-        },
-        {
-          "date": "2026-08-07",
-          "open": 10.1,
-          "high": 10.35,
-          "low": 9.9,
-          "close": 9.91,
-          "volume": 27361571
-        },
         {
           "date": "2026-08-10",
           "open": 10.0,
@@ -15606,7 +15387,15 @@
           "high": 9.49,
           "low": 8.85,
           "close": 9.29,
-          "volume": 16271265
+          "volume": 16244301
+        },
+        {
+          "date": "2026-11-09",
+          "open": NaN,
+          "high": NaN,
+          "low": NaN,
+          "close": NaN,
+          "volume": 8434592
         }
       ],
       "dividends": [
@@ -15641,31 +15430,15 @@
         "long_name": "Uni-President Enterprises Corp.",
         "industry": "Packaged Foods",
         "pe": 18.6,
-        "dividend_yield": 3.71,
+        "dividend_yield": 3.91,
         "eps": 4.12,
-        "revenue": 683964301312,
-        "gross_margin": 33.29,
-        "profit_margin": 3.44,
-        "roe": 17.83,
-        "market_cap": 436378796032
+        "revenue": 694704930816,
+        "gross_margin": 33.06,
+        "profit_margin": 3.45,
+        "roe": 16.95,
+        "market_cap": 435810566144
       },
       "price_history": [
-        {
-          "date": "2026-08-06",
-          "open": 72.8,
-          "high": 73.9,
-          "low": 72.5,
-          "close": 73.0,
-          "volume": 22229240
-        },
-        {
-          "date": "2026-08-07",
-          "open": 73.6,
-          "high": 75.7,
-          "low": 73.5,
-          "close": 75.7,
-          "volume": 27617108
-        },
         {
           "date": "2026-08-10",
           "open": 75.7,
@@ -16152,7 +15925,15 @@
           "high": 80.3,
           "low": 76.8,
           "close": 76.8,
-          "volume": 17997111
+          "volume": 17906931
+        },
+        {
+          "date": "2026-11-09",
+          "open": NaN,
+          "high": NaN,
+          "low": NaN,
+          "close": NaN,
+          "volume": 17522945
         }
       ],
       "dividends": [
@@ -16204,22 +15985,6 @@
         "market_cap": null
       },
       "price_history": [
-        {
-          "date": "2026-08-06",
-          "open": 139.95,
-          "high": 140.25,
-          "low": 139.45,
-          "close": 140.15,
-          "volume": 1793703
-        },
-        {
-          "date": "2026-08-07",
-          "open": 140.15,
-          "high": 140.15,
-          "low": 139.4,
-          "close": 139.65,
-          "volume": 672302
-        },
         {
           "date": "2026-08-10",
           "open": 141.8,
@@ -16706,7 +16471,15 @@
           "high": 131.15,
           "low": 129.65,
           "close": 130.15,
-          "volume": 1581584
+          "volume": 1422900
+        },
+        {
+          "date": "2026-11-09",
+          "open": NaN,
+          "high": NaN,
+          "low": NaN,
+          "close": NaN,
+          "volume": 1642099
         }
       ],
       "dividends": []
@@ -16714,23 +16487,23 @@
   },
   "highlight": {
     "top_gainer": {
-      "code": "6116",
-      "name": "彩晶",
-      "pct": 0.41322314049587366
+      "code": "2328",
+      "name": "廣宇",
+      "pct": 9.988249118683902
     },
     "top_loser": {
-      "code": "2103",
-      "name": "台橡",
-      "pct": -9.960937500000004
+      "code": "2886",
+      "name": "兆豐金",
+      "pct": -1.3084112149532763
     }
   },
   "hot_move_threshold": 5.0,
   "summary": {
-    "total_value": 197200.0,
+    "total_value": 208200.0,
     "total_cost": 210150.0,
-    "total_pl": -12950.0,
-    "total_pl_pct": -6.162265048774685,
+    "total_pl": -1950.0,
+    "total_pl_pct": -0.9279086366880799,
     "position_count": 3,
-    "up_ratio": 3.8461538461538463
+    "up_ratio": 76.92307692307693
   }
 }
